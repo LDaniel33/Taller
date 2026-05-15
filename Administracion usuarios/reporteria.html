@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reportería - Taller La Unión</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --black-1:#0B090A;
+  --black-2:#161A1D;
+  --red-2:#BA181B;
+  --accent:#E5383B;
+  --muted-1:#6b6464;
+  --muted-2:#D3D3D3;
+  --offwhite:#F5F3F4;
+  --white:#FFFFFF;
+  --glass: rgba(0,0,0,0.03);
+  --card-radius:12px;
+  --shadow: 0 8px 24px rgba(22,26,29,0.06);
+}
+*{box-sizing:border-box;}
+html,body{height:100%;margin:0;background:var(--white);color:var(--black-2);font-family:'Helvetica', sans-serif;}
+.app{max-width:1200px;margin:36px auto;padding:28px;background:linear-gradient(180deg,var(--offwhite),var(--white));border-radius:14px;box-shadow:var(--shadow);}
+header{display:flex;align-items:center;justify-content:space-between;padding-bottom:18px;border-bottom:1px solid rgba(22,26,29,0.06);}
+.brand{display:flex;gap:14px;align-items:center;}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--red-2),var(--accent));display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:var(--white);box-shadow:0 6px 18px rgba(229,56,59,0.12);}
+h1{font-size:20px;margin:0;color:var(--black-2);font-family:'Montserrat',sans-serif;}
+p.lead{margin:0;color:var(--muted-1);font-size:13px;font-family:'Arial',sans-serif;}
+.controls{display:flex;gap:12px;align-items:center;}
+.control{background:var(--glass);padding:8px;border-radius:10px;display:flex;gap:8px;align-items:center;}
+input[type="date"], select{background:transparent;border:0;color:var(--black-2);outline:none;padding:6px 8px;font-family:'Helvetica',sans-serif;}
+.label-inline{font-size:12px;color:var(--muted-1);margin-right:6px;font-family:'Arial',sans-serif;}
+button.primary{background:var(--accent);border:0;padding:8px 12px;border-radius:10px;color:var(--white);cursor:pointer;font-weight:600;font-family:'Helvetica',sans-serif;}
+button.ghost{background:transparent;border:1px solid rgba(22,26,29,0.06);padding:8px 10px;border-radius:10px;color:var(--black-2);cursor:pointer;font-family:'Helvetica',sans-serif;}
+main{display:grid;grid-template-columns:320px 1fr;gap:18px;margin-top:18px;}
+aside{padding:18px;background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.01));border-radius:12px;}
+.section-title{font-weight:700;margin-bottom:12px;color:var(--black-2);font-size:13px;font-family:'Montserrat',sans-serif;}
+label{display:block;font-size:13px;margin-bottom:6px;color:var(--muted-1);font-family:'Arial',sans-serif;}
+.field{margin-bottom:12px;}
+.select, .input{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(22,26,29,0.04);background:transparent;color:var(--black-2);font-family:'Helvetica',sans-serif;}
+.report-list{display:grid;gap:8px;}
+.report-item{padding:10px;border-radius:10px;background:linear-gradient(90deg, rgba(229,56,59,0.03), rgba(255,255,255,0.6));display:flex;justify-content:space-between;align-items:center;cursor:pointer;border:1px solid rgba(22,26,29,0.03);}
+.report-item:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(22,26,29,0.04);}
+.tag{font-size:12px;padding:6px 8px;border-radius:8px;background:var(--offwhite);color:var(--red-2);}
+.workspace{min-height:420px;padding:18px;background:transparent;border-radius:12px;}
+.grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:14px;}
+.card{background:var(--white);color:var(--black-2);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(22,26,29,0.04);border:1px solid rgba(22,26,29,0.03);}
+.card h3,.card h4{margin:0 0 10px 0;font-family:'Montserrat',sans-serif;}
+.card small{color:var(--muted-1);font-family:'Arial',sans-serif;}
+.table-wrap{overflow:auto;margin-top:10px;}
+table{width:100%;border-collapse:collapse;font-size:13px;font-family:'Helvetica',sans-serif;}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid rgba(0,0,0,0.06);}
+th{background:linear-gradient(90deg,var(--offwhite),var(--muted-2));font-weight:700;font-family:'Montserrat',sans-serif;}
+.btns{display:flex;gap:8px;margin-top:10px;}
+.btn-export{padding:8px 10px;border-radius:8px;border:0;cursor:pointer;font-weight:600;font-family:'Helvetica',sans-serif;}
+.xls{background:linear-gradient(90deg,#2b6b1d,#549e3b);color:var(--white);}
+.pdf{background:linear-gradient(90deg,var(--red-2),var(--accent));color:var(--white);}
+.reports-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
+.report-card{padding:12px;border-radius:10px;border:1px solid rgba(22,26,29,0.03);background:linear-gradient(180deg, var(--offwhite), var(--white));box-shadow:0 6px 14px rgba(22,26,29,0.03);}
+.stat{display:flex;align-items:center;gap:12px;}
+.stat .dot{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--red-2),var(--accent));display:flex;align-items:center;justify-content:center;color:var(--white);font-weight:700;}
+.stat .meta{font-weight:700;font-family:'Arial',sans-serif;}
+.muted{color:var(--muted-1);font-size:12px;font-family:'Arial',sans-serif;}
+@media (max-width:900px){main{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .reports-grid{grid-template-columns:1fr} .brand h1{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+<div class="brand">
+<div class="logo">TU</div>
+<div>
+<h1>Reportería - Taller La Unión</h1>
+<p class="lead">Módulo para generar reportes: contabilidad, clientes, garantías, citas y carga de trabajo.</p>
+</div>
+</div>
+<div class="controls">
+<div class="control"><span class="label-inline">Desde</span><input id="desde" type="date"></div>
+<div class="control"><span class="label-inline">Hasta</span><input id="hasta" type="date"></div>
+<div class="control">
+<select id="reportSelect">
+<option value="contabilidad">Contabilidad (Ingresos/Egresos)</option>
+<option value="clientes">Clientes</option>
+<option value="citas_canceladas">Citas canceladas</option>
+<option value="carros_estado">Carros (Arreglados / En proceso / Espera)</option>
+<option value="modelos">Reporte de modelos</option>
+<option value="ingresos_vehiculos">Ingreso de vehículos al taller</option>
+</select>
+</div>
+</div>
+</header>
+
+<main>
+<aside>
+<div style="height:10px"></div>
+<div class="section-title">Exportar</div>
+<div class="muted">Selecciona un reporte (arriba o tarjetas) y usa los botones en el área de trabajo para exportar a CSV o imprimir a PDF.</div>
+</aside>
+
+<section class="workspace">
+<div id="outputArea">
+<div class="grid">
+<div class="card">
+<h3>Resumen rápido</h3>
+<div class="stat">
+<div class="dot">$</div>
+<div>
+<div class="meta" id="totalIngresos">Ingresos: ₡0</div>
+<div class="muted">Período seleccionado</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h3>Trabajos pendientes</h3>
+<div class="muted">Citas activas y tiempos estimados</div>
+<div style="margin-top:8px;font-weight:700" id="pendientesCount">12 vehículos</div>
+</div>
+
+<div class="card" style="grid-column:span 2">
+<h3>Reportes disponibles</h3>
+<small class="muted">Selecciona el reporte que necesites y presiona Generar en la tarjeta correspondiente.</small>
+<div class="reports-grid" id="reportsGrid">
+<div class="report-card"><h4>Contabilidad</h4><p class="muted">Ingresos y egresos por periodo. Exporta a XLS o PDF.</p><button class="primary" style="width:100%;margin-top:8px" onclick="preset('contabilidad')">Generar</button></div>
+<div class="report-card"><h4>Clientes</h4><p class="muted">Listado de clientes, antigüedad y último servicio.</p><button class="primary" style="width:100%;margin-top:8px" onclick="preset('clientes')">Generar</button></div>
+<div class="report-card"><h4>Citas canceladas</h4><p class="muted">Citas canceladas por cliente, motivo y fecha.</p><button class="primary" style="width:100%;margin-top:8px" onclick="preset('citas_canceladas')">Generar</button></div>
+<div class="report-card"><h4>Carros (estado)</h4><p class="muted">Arreglados / En proceso / En espera — mecánico y ETA.</p><button class="primary" style="width:100%;margin-top:8px" onclick="preset('carros_estado')">Generar</button></div>
+<div class="report-card"><h4>Modelos</h4><p class="muted">Frecuencia por modelo y modelos poco comunes.</p><button class="primary" style="width:100%;margin-top:8px" onclick="preset('modelos')">Generar</button></div>
+<div class="report-card"><h4>Ingreso de vehículos</h4><p class="muted">Registro de ingresos (fecha/hora), motivo y estado inicial.</p><button class="primary" style="width:100%;margin-top:8px" onclick="preset('ingresos_vehiculos')">Generar</button></div>
+</div>
+</div>
+
+<div class="card" style="grid-column:span 2">
+<h3 id="reportTitle">Reporte: Contabilidad</h3>
+<small class="muted" id="reportSubtitle">Muestra de datos. Filtra por fecha y exporta.</small>
+
+<div class="btns">
+<button class="btn-export xls" onclick="exportTable('xls')">Exportar CSV</button>
+<button class="btn-export pdf" onclick="exportPDF()">Exportar PDF</button>
+</div>
+
+<div class="table-wrap">
+<table id="reportTable" role="table">
+<thead id="reportHead">
+<tr><th>Fecha</th><th>Tipo</th><th>Descripción</th><th>Monto</th><th>Cliente / Vehículo</th></tr>
+</thead>
+<tbody></tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+
+<script>
+// --- Datos de ejemplo ---
+const datos = [
+{fecha:'2025-11-01', tipo:'Ingreso', desc:'Reparación motor', monto:250000, cliente:'Juan Pérez - Toyota Corolla 2018'},
+{fecha:'2025-11-03', tipo:'Egreso', desc:'Compra repuestos', monto:-45000, cliente:'Stock'},
+{fecha:'2025-11-07', tipo:'Ingreso', desc:'Servicio A/C', monto:60000, cliente:'Ana Gómez - Honda Civic 2020'},
+{fecha:'2025-11-09', tipo:'Ingreso', desc:'Garantía - Reproceso', monto:0, cliente:'Carlos Díaz - Nissan Sentra 2010'},
+{fecha:'2025-11-12', tipo:'Egreso', desc:'Pago proveedor', monto:-120000, cliente:'Proveedor ABC'},
+{fecha:'2025-11-15', tipo:'Ingreso', desc:'Revisión general', monto:80000, cliente:'María Ruiz - Suzuki Swift 2025'},
+{fecha:'2025-11-18', tipo:'Ingreso', desc:'Cambio transmisión', monto:320000, cliente:'Taller externo'},
+{fecha:'2025-11-20', tipo:'Ingreso', desc:'Servicio rápido', monto:25000, cliente:'Luis Vargas - Renault 4 1979'},
+{fecha:'2025-11-22', tipo:'Egreso', desc:'Herramientas', monto:-34000, cliente:'Gastos generales'}
+];
+const clientes = [
+{id:1,nombre:'Juan Pérez',cedula:'101234567',telefono:'8888-0000',fecha_registro:'2020-02-10',ultimo_servicio:'2025-11-01',total_servicios:12,vehiculos:['Toyota Corolla 2018']},
+{id:2,nombre:'Ana Gómez',cedula:'102345678',telefono:'8888-1111',fecha_registro:'2023-05-01',ultimo_servicio:'2025-11-07',total_servicios:5,vehiculos:['Honda Civic 2020']},
+{id:3,nombre:'María Ruiz',cedula:'103456789',telefono:'8888-2222',fecha_registro:'2025-06-20',ultimo_servicio:'2025-11-15',total_servicios:1,vehiculos:['Suzuki Swift 2025']},
+{id:4,nombre:'Luis Vargas',cedula:'104567890',telefono:'8888-3333',fecha_registro:'2018-01-12',ultimo_servicio:'2025-11-20',total_servicios:20,vehiculos:['Renault 4 1979']},
+{id:5,nombre:'Carlos Díaz',cedula:'105678901',telefono:'8888-4444',fecha_registro:'2019-11-03',ultimo_servicio:'2025-11-09',total_servicios:8,vehiculos:['Nissan Sentra 2010']}
+];
+const carros = [
+{ingreso:'2025-11-20 08:30',cliente:'Luis Vargas',vehiculo:'Renault 4 1979',estado:'En espera',diagnostico:'Frenos',mecanico:'Mecánico A',eta:'2025-11-25'},
+{ingreso:'2025-11-18 09:15',cliente:'María Ruiz',vehiculo:'Suzuki Swift 2025',estado:'En proceso',diagnostico:'Cambio de aceite',mecanico:'Mecánico B',eta:'2025-11-19'},
+{ingreso:'2025-11-01 10:00',cliente:'Juan Pérez',vehiculo:'Toyota Corolla 2018',estado:'Arreglado',diagnostico:'Reparación motor',mecanico:'Mecánico A',eta:'2025-11-05'}
+];
+const modelos = [
+{modelo:'Toyota Corolla 2018',cantidad:12},
+{modelo:'Honda Civic 2020',cantidad:9},
+{modelo:'Suzuki Swift 2025',cantidad:2},
+{modelo:'Renault 4 1979',cantidad:1}
+];
+
+// --- Funciones ---
+function numberFormat(n){ return (typeof n === 'number')? n.toLocaleString('es-CR'):n; }
+function headerToKey(h){const map={'Fecha':'fecha','Tipo':'tipo','Descripción':'desc','Monto':'monto','Cliente / Vehículo':'cliente','Ingreso':'ingreso','Estado':'estado','Vehículo':'vehiculo','Diagnóstico':'diagnostico','Mecánico':'mecanico','ETA':'eta','Modelo':'modelo','Cantidad':'cantidad'};return map[h]||h.toLowerCase().replace(/\s+/g,'_'); }
+function renderTable(rows, headers){
+  const thead = document.getElementById('reportHead'); const tbody = document.querySelector('#reportTable tbody');
+  thead.innerHTML = '<tr>'+headers.map(h=>`<th>${h}</th>`).join('')+'</tr>';
+  tbody.innerHTML = rows.map(r=>{
+    if(Array.isArray(r)) return '<tr>'+r.map(c=>`<td>${c||'-'}</td>`).join('')+'</tr>';
+    else return '<tr>'+headers.map(h=>{const key=headerToKey(h);let v=(r[key]!==undefined)?r[key]:'-'; if(key==='monto'&&(v!=='-'&&v!==null)) v='₡'+numberFormat(v); return `<td>${v}</td>`;}).join('')+'</tr>';
+  }).join('');
+}
+function renderReport(tipo){
+  let rows=[], headers=[];
+  const desde=document.getElementById('desde').value; const hasta=document.getElementById('hasta').value;
+  const start = desde?new Date(desde):null; const end = hasta?new Date(hasta):null;
+  switch(tipo){
+    case 'contabilidad': headers=['Fecha','Tipo','Descripción','Monto','Cliente / Vehículo'];
+      rows=datos.filter(d=>{
+        const f=new Date(d.fecha); if(start&&f<start) return false;if(end&&f>end) return false;return true;
+      }); break;
+    case 'clientes': headers=['Nombre','Cédula','Teléfono','Fecha registro','Último servicio','Total servicios','Vehículos'];
+      rows=clientes.map(c=>({nombre:c.nombre,cedula:c.cedula,telefono:c.telefono,fecha_registro:c.fecha_registro,ultimo_servicio:c.ultimo_servicio,total_servicios:c.total_servicios,cliente:c.nombre+' - '+c.vehiculos.join(', ')})); break;
+    case 'citas_canceladas': headers=['Fecha','Cliente','Motivo','Vehículo'];
+      rows=[{fecha:'2025-11-02',cliente:'Ana Gómez',motivo:'Falla repuestos',vehiculo:'Honda Civic 2020'}]; break;
+    case 'carros_estado': headers=['Ingreso','Estado','Cliente','Vehículo','Diagnóstico','Mecánico','ETA'];
+      rows=carros; break;
+    case 'modelos': headers=['Modelo','Cantidad'];
+      rows=modelos; break;
+    case 'ingresos_vehiculos': headers=['Ingreso','Cliente','Vehículo','Estado','Diagnóstico'];
+      rows=carros.map(c=>({ingreso:c.ingreso,cliente:c.cliente,vehiculo:c.vehiculo,estado:c.estado,diagnostico:c.diagnostico})); break;
+  }
+  renderTable(rows, headers);
+  document.getElementById('reportTitle').textContent='Reporte: '+tipo.replace('_',' ');
+  document.getElementById('reportSubtitle').textContent='Período: '+(desde||'Inicio')+' - '+(hasta||'Hoy');
+  if(tipo==='contabilidad'){
+    const total=rows.reduce((a,b)=>a+Number(b.monto||0),0);
+    document.getElementById('totalIngresos').textContent='Ingresos: ₡'+numberFormat(total);
+  }
+}
+
+// --- Preset ---
+function preset(tipo){document.getElementById('reportSelect').value=tipo; renderReport(tipo);}
+document.getElementById('reportSelect').addEventListener('change', e=>renderReport(e.target.value));
+document.getElementById('desde').addEventListener('change',()=>renderReport(document.getElementById('reportSelect').value));
+document.getElementById('hasta').addEventListener('change',()=>renderReport(document.getElementById('reportSelect').value));
+
+// --- Export CSV/XLS ---
+function exportTable(format){
+  const table = document.getElementById('reportTable'); const rows = Array.from(table.rows).map(r=>Array.from(r.cells).map(c=>c.innerText));
+  let csvContent = rows.map(r=>r.join(";")).join("\n");
+  const blob = new Blob([csvContent], {type:"text/csv;charset=utf-8;"});
+  const link = document.createElement("a"); link.href=URL.createObjectURL(blob);
+  link.download = "reporte.csv"; link.click();
+}
+
+// --- Export PDF ---
+function exportPDF(){
+  const table = document.getElementById('reportTable');
+  const win = window.open('', '', 'height=700,width=900'); win.document.write('<html><head><title>Reporte PDF</title></head><body>'+table.outerHTML+'</body></html>');
+  win.document.close(); win.print();
+}
+
+// --- Inicial ---
+renderReport('contabilidad');
+</script>
+</body>
+</html>

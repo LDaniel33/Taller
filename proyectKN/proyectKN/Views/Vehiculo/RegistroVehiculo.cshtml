@@ -1,0 +1,154 @@
+﻿@model proyectKN.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Registro Vehículo";
+    Layout = "_Layout";
+}
+
+    <div class="container mt-4">
+        @if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+        <!-- Header flotante -->
+        <div class="profile-header">
+            <h2>Registro de vehículo</h2>
+            <p>Registrar un nuevo vehículo</p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="card">
+            <form asp-action="RegistroVehiculo"
+                  asp-controller="Vehiculo"
+                  method="post"
+                  class="card-body">
+
+                <div class="row">
+                    <div class="field">
+                        <label>Marca del vehículo</label>
+                        <input type="text" asp-for="Marca" class="form-control" required>
+                        </div>
+                        <div class="field">
+                            <label>Modelo del vehículo</label>
+                            <input type="text" asp-for="Modelo" class="form-control" required>
+                            </div>
+                            <div class="field">
+                                <label>Año del vehículo</label>
+                                <input type="text" id="Anio" asp-for="Anio" class="form-control" maxlength="4" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="field">
+                                    <label>Placa del vehículo</label>
+                                    <input type="text" asp-for="Placa" class="form-control" required>
+                                    </div>
+                                    <div class="field">
+                                        <label>Cédula</label>
+                                        <input type="text" asp-for="Cedula" class="form-control" required onkeyup="ConsultarDueno();">
+                                        </div>
+
+                                        <div class="field">
+                                            <label>Nombre del dueño</label>
+                                            <input type="text" asp-for="Nombre_Cliente" class="form-control" readonly required>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="field">
+                                                <label>Teléfono</label>
+                                                <input type="text" id="Telefono" asp-for="Telefono" class="form-control" maxlength="8" required>
+                                                </div>
+                                                
+                                                <div class="field">
+                                                    <label>Estado</label>
+                                                    <input type="text" class="form-control" value="Ingresado" readonly />
+                                                </div>
+                                                </div>
+                    
+                                            
+
+                                            <div class="row">
+                   
+                                                <div class="field full">
+                                                    <label>Problema reportado</label>
+                                                    <textarea asp-for="Problema" class="form-control" rows="4" required></textarea>
+                                                </div>
+
+                                                <div class="field full">
+                                                    <label>Revición Incial</label>
+                                                    <textarea asp-for="Revision" class="form-control" rows="4" required></textarea>
+                                                </div>
+
+                                            </div>
+
+                                            <button type="submit" class="btn">Crear</button>
+
+                                        </form>
+                                    </div>
+
+                                    <!-- TABLA -->
+                                    <div class="table-registros">
+                                        <div class="table-title">Vehiculos Registrados</div>
+
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Vehículo</th>
+                                                    <th>Placa</th>
+                                                    <th>Modelo</th>
+                                                    <th>Año</th>
+                                                    <th>Estado</th>
+                                                    <th>Problema</th>
+                                                    <th>Revision</th>
+                                                    <th>Dueño</th>
+                                                    <th>Contacto</th>
+                                                    <th>Cédula</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @if (ViewBag.Vehiculos != null && ViewBag.Vehiculos.Count > 0)
+                                                {
+                                                    foreach (var item in ViewBag.Vehiculos)
+                                                    {
+                                                        <tr>
+                                                            <td>@item.Marca</td>
+                                                            <td>@item.Placa</td>
+                                                            <td>@item.Modelo</td>
+                                                            <td>@item.Anio</td>
+                                                            <td>@item.Estado</td>
+                                                            <td>@item.Problema</td>
+                                                            <td>@item.Revision</td>
+                                                            <td>@item.Nombre_Cliente</td>
+                                                            <td>@item.Telefono</td>
+                                                            <td>@item.Cedula</td>
+                                                            <td>
+                                                                <a asp-controller="Vehiculo"
+                                                                       asp-action="EditarVehiculo"
+                                                                       asp-route-id="@item.Consecutivo"
+                                                                       class="btn btn-warning btn-sm">
+                                                                    Editar
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <tr>
+                                                        <td colspan="11" class="text-center text-muted">
+                                                            No hay vehículos registrados
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            <script src="~/js/vehiculo.js"></script>
+                                <!-- JS -->
+                      

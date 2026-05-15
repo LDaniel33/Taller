@@ -1,0 +1,173 @@
+﻿@model proyectKN.Models.Reporte
+
+@{
+    ViewData["Title"] = "Reporteria";
+    Layout = "_Layout";
+}
+
+<link href="~/css/reporte.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<div class="container mt-4">
+
+    <div class="app">
+
+        <div class="profile-header">
+            <h2>Reportería</h2>
+            <p>Generación de reportes del sistema</p>
+        </div>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3>Resumen rápido</h3>
+
+                <div class="stat">
+                    <div class="dot">$</div>
+
+                    <div>
+                        <div class="meta" id="totalIngresos">Ingresos: ₡0</div>
+                        <div class="muted">Período seleccionado</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Busqueda por fechas</h3>
+
+                <div class="controls" style="margin-top:15px">
+
+                    <div class="control">
+                        <span class="label-inline">Desde</span>
+                        <input id="desde" type="date" value="" />
+                    </div>
+
+                    <div class="control">
+                        <span class="label-inline">Hasta</span>
+                        <input id="hasta" type="date"value="" />
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card mt-3">
+
+            <h3>Reportes disponibles</h3>
+
+            <div class="reports-grid">
+
+                <div class="report-card">
+                    <h4>Contabilidad</h4>
+                    <p class="muted">Ingresos y egresos</p>
+                    <button class="primary" onclick="preset('contabilidad')">Generar</button>
+                </div>
+
+                <div class="report-card">
+                    <h4>Usuarios</h4>
+                    <p class="muted">Listado de usuarios</p>
+                    <button class="primary" onclick="preset('clientes')">Generar</button>
+                </div>
+                <div class="report-card">
+
+                <h3>Resumen de citas</h3>
+
+                <div class="citas-grid">
+
+                    <div class="stat" onclick="filtrarResumenCitas('Confirmada')" style="cursor:pointer;">
+                        <div class="dot">✓</div>
+                        <div>
+                            <div class="meta" id="totalConfirmadas">Confirmadas: 0</div>
+                            <div class="muted">Click para ver reporte</div>
+                        </div>
+                    </div>
+
+                    <div class="stat" onclick="filtrarResumenCitas('Finalizada')" style="cursor:pointer;">
+                        <div class="dot">✔</div>
+                        <div>
+                            <div class="meta" id="totalFinalizadas">Finalizadas: 0</div>
+                            <div class="muted">Click para ver reporte</div>
+                        </div>
+                    </div>
+
+                    <div class="stat" onclick="filtrarResumenCitas('Pendiente')" style="cursor:pointer;">
+                        <div class="dot">!</div>
+                        <div>
+                            <div class="meta" id="totalPendientes">Pendientes: 0</div>
+                            <div class="muted">Click para ver reporte</div>
+                        </div>
+                    </div>
+
+                    <div class="stat" onclick="filtrarResumenCitas('Cancelada')" style="cursor:pointer;">
+                        <div class="dot">✖</div>
+                        <div>
+                            <div class="meta" id="totalCanceladas">Canceladas: 0</div>
+                            <div class="muted">Click para ver reporte</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="report-card">
+                    <h4>Ingreso vehículos</h4>
+                    <p class="muted">Registro de ingresos</p>
+                    <button class="primary" onclick="preset('ingresos_vehiculos')">Generar</button>
+                </div>
+
+                <div class="report-card">
+                    <h4>Inventario</h4>
+                    <p class="muted">Registro de inventario</p>
+                    <button class="primary" onclick="preset('inventario')">Generar</button>
+                </div>
+
+                <div class="report-card">
+                    <h4>Proveedores</h4>
+                    <p class="muted">Registro de proveedores</p>
+                    <button class="primary" onclick="preset('proveedores')">Generar</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="card mt-3">
+
+            <h3 id="reportTitle">Reporte</h3>
+
+            <div class="btns">
+                <button class="btn-export xls" onclick="exportTable()">Exportar CSV</button>
+                <button class="btn-export pdf" onclick="exportPDF()">Exportar PDF</button>
+            </div>
+
+            <div class="table-wrap">
+
+                <table id="reportTable">
+
+                    <thead id="reportHead">
+                        <tr>
+                            <th>Seleccione un reporte</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="reportBody">
+                        <tr>
+                            <td>No hay datos para mostrar</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.31/jspdf.plugin.autotable.min.js"></script>
+<script src="~/js/reporte.js" asp-append-version="true"></script>

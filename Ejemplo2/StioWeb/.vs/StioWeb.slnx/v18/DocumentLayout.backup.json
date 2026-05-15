@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|c:\\proyectofinal\\ejemplo2\\stioweb\\stioweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|solutionrelative:stioweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|c:\\proyectofinal\\ejemplo2\\stioweb\\stioweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|solutionrelative:stioweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|c:\\proyectofinal\\ejemplo2\\stioweb\\stioweb\\wwwroot\\css\\vendor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|solutionrelative:stioweb\\wwwroot\\css\\vendor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|c:\\proyectofinal\\ejemplo2\\stioweb\\stioweb\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|solutionrelative:stioweb\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|c:\\proyectofinal\\ejemplo2\\stioweb\\stioweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2C408476-8D96-1133-6EE9-B3FCAFC416E4}|StioWeb\\StioWeb.csproj|solutionrelative:stioweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "vendor.css",
+              "DocumentMoniker": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\wwwroot\\css\\vendor.css",
+              "RelativeDocumentMoniker": "StioWeb\\wwwroot\\css\\vendor.css",
+              "ToolTip": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\wwwroot\\css\\vendor.css",
+              "RelativeToolTip": "StioWeb\\wwwroot\\css\\vendor.css",
+              "ViewState": "AgIAALEJAAAAAAAAAAAAAEkHAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-03T16:36:07.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StioWeb\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StioWeb\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-03T16:23:21.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StioWeb\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StioWeb\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-03T15:41:45.12Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "StioWeb\\wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "StioWeb\\wwwroot\\css\\styles.css",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAnwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-04-03T16:25:31.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "StioWeb\\appsettings.json",
+              "ToolTip": "C:\\ProyectoFinal\\Ejemplo2\\StioWeb\\StioWeb\\appsettings.json",
+              "RelativeToolTip": "StioWeb\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-04T00:33:01.149Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

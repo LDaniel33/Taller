@@ -1,0 +1,384 @@
+﻿.table-container {
+    background: #161a1d;
+    padding: 30px;
+    border-radius: 8px;
+    width: 105%; /* 👈 más ancho horizontal */
+    max-width: 1900px; /* 👈 límite en pantallas grandes */
+
+    margin: 0px auto 0 auto; /* 👈 centrado */
+}
+
+
+.table-title {
+    color: #b1a7a6;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    color: #7a85b4;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+tbody tr {
+    border-top: 2px solid #1f2430;
+}
+
+tbody td {
+    color: #fff;
+    font-size: 12px;
+}
+
+tbody tr:hover {
+    background: #1a1f2c;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+    .badge.approved {
+        color: #1cff8d;
+        border: 1px solid #1cff8d;
+    }
+
+    .badge.pending {
+        color: #ffc107;
+        border: 1px solid #ffc107;
+    }
+
+    .badge.rejected {
+        color: #ff4d4d;
+        border: 1px solid #ff4d4d;
+    }
+
+.table-registros table {
+    border-collapse: collapse;
+}
+
+.table-registros {
+    background: #161a1d;
+    padding: 25px;
+    border-radius: 6px;
+    width: 100%; /* más ancho */
+  
+    max-width: 1200px; /* límite en pantallas grandes */
+    margin: 60px auto 0 auto;
+}
+    .table-registros table,
+    .table-registros th,
+    .table-registros td {
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+        white-space: normal !important;
+    }
+
+    .table-registros td {
+        min-width: 10px;
+      
+    }
+
+        .table-registros td:nth-child(1) {
+            min-width: 128px; /* cliente */
+        }
+
+        
+        .table-registros td:nth-child(9) {
+            min-width: 180px; /* cliente */
+        }
+
+    .table-registros td {
+        font-size: 14px;
+    }
+        
+.table-title {
+    color: #b1a7a6;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    color: #7a85b4;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    padding-bottom: 12px;
+}
+
+tbody tr {
+    border-top: 2px solid #1f2430;
+}
+
+
+tbody tr:hover {
+    background: #1a1f2c;
+}
+
+/* Badges */
+.badge {
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+    .badge.approved {
+        color: #1cff8d;
+        border: 1px solid #1cff8d;
+    }
+
+    .badge.pending {
+        color: #ffc107;
+        border: 1px solid #ffc107;
+    }
+
+    .badge.rejected {
+        color: #ff4d4d;
+        border: 1px solid #ff4d4d;
+    }
+
+input,
+textarea,
+select {
+    border: none;
+    background: rgba(0,0,0,0.15);
+    border-bottom: 1px solid #ccc;
+    padding: 8px 4px;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+}
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+    }
+
+    select option {
+        background: #161a1d; /* mismo fondo del formulario */
+        color: #fff;
+    }
+
+    select:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px #5fa8d3;
+    }
+
+    select::selection {
+        background: #5fa8d3;
+        color: #fff;
+    }
+
+
+/* FORZAR FOOTER NEGRO */
+footer,
+.main-footer {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+/* FORZAR INPUTS TRANSPARENTES */
+.field input,
+.field textarea,
+.field select {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.4) !important;
+    color: #fff !important;
+}
+
+    .field input:focus,
+    .field textarea:focus,
+    .field select:focus {
+        background-color: transparent !important;
+        outline: none;
+        box-shadow: none;
+    }
+
+.ReadOnly {
+    cursor: not-allowed
+}
+
+.form-floating > label {
+    background-color: transparent !important;
+    padding: 0 5px;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    background-color: transparent !important;
+}
+
+.btn-cancelar {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+
+    .btn-cancelar:hover {
+        background-color: darkred;
+    }
+
+.hora-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+    .hora-grid button {
+        padding: 12px;
+        color: #5fa8d3;
+        background-color: #161b22;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.2s;
+    }
+
+        .hora-grid button:hover {
+            background-color: #5fa8d3;
+            color: #1e1e2f;
+        }
+
+        .hora-grid button.activo {
+            background-color: #5fa8d3;
+            color: #1e1e2f;
+            border-color: #00cfff;
+        }
+.hora-ocupada {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: #161a1d !important;
+    ;
+}
+
+.text-dark {
+    --bs-text-opacity: 1;
+    color: #fbfbfb !important;
+    
+}
+.alert {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.btn-hora.activo {
+    background-color: #5fa8d3;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+.hora-pasada {
+    background-color: #6c757d;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.hora-ocupada {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+
+    .table-scroll table {
+        width: 100%;
+        min-width: 700px; 
+        border-collapse: collapse;
+    }
+
+    .table-scroll th,
+    .table-scroll td {
+        padding: 10px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+
+@media (max-width: 768px) {
+    .table-container {
+        padding: 10px;
+    }
+
+    .table-scroll {
+        overflow-x: auto;
+    }
+}
+
+.alerta-stock {
+    padding: 6px 10px;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #fff3cd;
+    border: 1px solid #ffe69c;
+    color: #856404;
+}
+.fila-stock-bajo td {
+    color: #e74c3c;
+    font-weight: 500;
+}
+
+.table-registros th,
+.table-registros td {
+    text-align: center;
+    padding-left: 5px;
+   
+    }
+
+
+
+.table-citas {
+    background: #161a1d;
+    padding: 20px;
+    border-radius: 6px;
+    width: 101%;
+ 
+    margin-top: 60px;
+}
+
+    .table-citas table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+    }
+
+    .table-citas th,
+    .table-citas td {
+        padding: 6px 8px;
+        text-align: center;
+        vertical-align: middle;
+    }
+

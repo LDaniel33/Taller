@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<link href="~/css/cards.css" rel="stylesheet" />
+
+<div class="table-container">
+    <div class="table-title">Citas del Mes</div>
+    <div class="table-scroll">
+    <table>
+        <thead>
+            <tr>
+               
+                <th>Nombre</th>
+                <th>Fecha</th>
+                <th>Servicio</th>
+                <th>Contacto</th>
+                <th>Estado de la Cita</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewBag.CitasHoy != null && ViewBag.CitasHoy.Count > 0)
+            {
+                foreach (var item in ViewBag.CitasHoy)
+                {
+                    string claseEstado = "pending";
+
+                    if (item.Estado == "Confirmada")
+                        claseEstado = "approved";
+                    else if (item.Estado == "Cancelada")
+                        claseEstado = "rejected";
+                    else if (item.Estado == "Pendiente")
+                        claseEstado = "pending";
+                    else if (item.Estado == "Finalizada")
+                        claseEstado = "approved";
+
+                    <tr>
+                        
+                        <td>@item.NombreCliente</td>
+                        <td>
+                            @item.FechaCita.ToString("dd/MM/yyyy")
+                            <br />
+                            @item.HoraCita.ToString(@"hh\:mm")
+                        </td>
+                        <td>@item.Servicio</td>
+                        <td>
+                            @item.Email
+                            <br />
+                            @item.Telefono
+                        </td>
+                        <td>
+                            <span class="badge @claseEstado">@item.Estado</span>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="6" class="text-center text-muted">
+                        No hay citas para hoy
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+</div>

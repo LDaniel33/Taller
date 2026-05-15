@@ -1,0 +1,7 @@
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\StioWeb.exe
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\appsettings.Development.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\appsettings.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\StioWeb.dll
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\StioWeb.deps.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\StioWeb.runtimeconfig.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Release\net10.0\PubTmp\Out\StioWeb.pdb

@@ -1,0 +1,142 @@
+﻿@model proyectKN.Models.Usuario
+
+@{
+    ViewData["Title"] = "Registro de Usuarios";
+    Layout = "_Layout";
+}
+
+<div class="container-fluid mt-4"> </div>
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+<!-- Header -->
+<div class="profile-header">
+    <h2>Registro de Usuario</h2>
+    <p>Registrar un nuevo Usuario</p>
+</div>
+
+
+    <!-- FORMULARIO -->
+    <div class="card card-usuario">
+        <form asp-action="RegistroUsuario" method="post" id="formRegistro" class="card-body">
+
+            <div class="row">
+
+            <div class="field">
+                <label>Cédula</label>
+                <input type="text" asp-for="Cedula" class="form-control" placeholder="118780524" required onkeyup="ConsultarNombre();">
+                </div>
+
+                <div class="field">
+                    <label>Nombre Completo</label>
+                    <input type="text" asp-for="NombreCompleto" class="form-control" readonly required>
+                </div>
+
+                <div class="field">
+                    <label>Correo</label>
+                    <input type="email" asp-for="Correo" class="form-control" placeholder="juan24@gmail.com" required>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+
+                <div class="field">
+                    <label>Usuario</label>
+                    <input type="text" asp-for="UsuarioLogin" class="form-control" placeholder="Juan24" required>
+                </div>
+
+                <div class="field">
+                    <label>Contraseña</label>
+                    <input type="password" id="Contrasenna" asp-for="Contrasenna" class="form-control" placeholder="******" minlenght ="6" required>
+                </div>
+
+                <!-- ROL -->
+                <div class="field">
+                    <label>Rol</label>
+                    <select asp-for="NombreRol" class="form-control" required>
+                        <option value="">Seleccione un Rol</option>
+                        @if (ViewBag.Roles != null)
+                        {
+                            foreach (var r in ViewBag.Roles)
+                            {
+                                <option value="@r.Consecutivo">@r.NombreRol</option>
+                            }
+                        }
+                    </select>
+                </div>
+
+                <!-- ESTADO -->
+                                <div class="field">
+                                    <label>Estado</label>
+                                    <input type="text" class="form-control" value="Activo" readonly />
+                                </div>
+
+            </div>
+
+            <button type="submit" class="btn">Crear</button>
+
+        </form>
+    </div>
+
+        <!-- TABLA -->
+        <div class="table-registros">
+            <div class="table-title">Usuarios Registrados</div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Cédula</th>
+                        <th>Correo</th>
+                        <th>Usuario</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @if (ViewBag.Usuarios != null)
+                    {
+                        foreach (var item in ViewBag.Usuarios)
+                        {
+                            <tr>
+                                <td>@item.NombreCompleto</td>
+                                <td>@item.Cedula</td>
+                                <td>@item.Correo</td>
+                                <td>@item.UsuarioLogin</td>
+                                <td>@item.NombreRol</td>
+                                <td>@item.Estado</td>
+                                <td>
+                                    <a asp-controller="Usuario"
+                                       asp-action="EditarUsuario"
+                                       asp-route-id="@item.Consecutivo"
+                                       class="btn btn-warning">
+                                        Editar
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center text-muted">
+                                No hay usuarios registrados
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+  
+ <script src="~/js/Registro.js" asp-append-version="true"></script>
+ 
+
+

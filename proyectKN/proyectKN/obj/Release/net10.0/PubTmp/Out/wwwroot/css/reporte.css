@@ -1,0 +1,343 @@
+﻿/* ================================
+   VARIABLES
+================================ */
+
+:root {
+    --black-1: #000000;
+    --black-2: #161a1d;
+    --red-2: #5fa8d3;
+    --accent: #5fa8d3;
+    --muted-1: #b1a7a6;
+    --muted-2: #1f2430;
+    --offwhite: #161a1d;
+    --white: #161a1d;
+    --glass: rgba(255,255,255,0.05);
+    --card-radius: 12px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+
+.brand {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+/* ================================
+   CONTROLS
+================================ */
+
+.controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.control {
+    background: var(--glass);
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+input[type="date"],
+select {
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    padding: 6px 8px;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.label-inline {
+    font-size: 12px;
+    color: var(--muted-1);
+    margin-right: 6px;
+}
+
+/* ================================
+   APP CONTAINER
+================================ */
+
+.app {
+    max-width: 1200px;
+    margin: 36px auto;
+    padding: 28px;
+    background: linear-gradient(180deg,#161a1d,#000);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+
+button.primary {
+    background: #5fa8d3;
+    border: 0;
+    padding: 8px 12px;
+    border-radius: 10px;
+    color: #000;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease; /* 🔥 animación suave */
+}
+
+    /* HOVER (igual que exportar) */
+    button.primary:hover {
+        background: #4a94c2;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(95,168,211,0.4);
+    }
+
+    /* CLICK (efecto presión + glow) */
+    button.primary:active {
+        transform: scale(0.95);
+        background: #3f86b3;
+        box-shadow: 0 0 12px rgba(95,168,211,0.8);
+    }
+
+/* ================================
+   GRID / CARDS
+================================ */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.card {
+    background: #161b22;
+    color: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+    .card h3,
+    .card h4 {
+        margin: 0 0 10px 0;
+    }
+
+    .card small {
+        color: #9ca3af;
+    }
+
+
+
+/* ================================
+   EXPORT BUTTONS
+================================ */
+
+.btns {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.btn-export {
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.xls {
+    background: #5fa8d3;
+    color: #000;
+}
+
+.pdf {
+    background: #5fa8d3;
+    color: #000;
+}
+
+/* ================================
+   REPORT CARDS
+================================ */
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.report-card {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+    background: #161b22;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+/* ================================
+   STATS
+================================ */
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+    .stat .dot {
+        width: 42px;
+        height: 42px;
+        border-radius: 10px;
+        background: linear-gradient(135deg,#5fa8d3,#4a94c2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        font-weight: 700;
+    }
+
+    .stat .meta {
+        font-weight: 700;
+    }
+
+.muted {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+/* =================================
+   FIX GENERAL DE COLORES (TEXTO)
+================================= */
+
+h3, h4, h5 {
+    color: #ffffff !important;
+}
+
+/* Inputs y selects */
+input,
+select {
+    color: #ffffff !important;
+}
+
+/* Placeholder */
+::placeholder {
+    color: #9ca3af;
+}
+
+
+/* =================================
+   TABLA MÁS PEQUEÑA Y COMPACTA
+================================= */
+
+#reportTable {
+    font-size: 12px;
+}
+
+    #reportTable th {
+        font-size: 12px;
+    }
+
+    #reportTable td {
+        font-size: 11px;
+    }
+
+    /* Padding más compacto */
+    #reportTable th,
+    #reportTable td {
+        padding: 6px 8px;
+    }
+
+
+    /* =================================
+   MEJOR VISUAL (HOVER)
+================================= */
+
+    #reportTable tbody tr:hover {
+        background: rgba(95,168,211,0.1);
+    }
+
+
+/* =================================
+   OPCIONAL: SISTEMA MÁS COMPACTO
+================================= */
+
+body {
+    font-size: 14px;
+}
+
+/* =================================
+   AJUSTAR POSICIÓN HEADER AZUL
+================================= */
+
+.profile-header {
+    position: relative;
+    top: -60px; /* 🔥 CAMBIA ESTE VALOR */
+}
+
+/* =================================
+   HEADERS DE TABLA MÁS VISIBLES
+================================= */
+
+#reportTable th {
+    font-weight: 700; /* negrita */
+    font-size: 15px; /* más grande */
+    color: #ffffff;
+}
+
+/* =================================
+   BOTONES EXPORTAR CON EFECTO PRO
+================================= */
+
+.btn-export {
+    background: #5fa8d3;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+    /* EFECTO HOVER */
+    .btn-export:hover {
+        background: #4a94c2;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(95,168,211,0.4);
+    }
+.citas-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reports-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .citas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+}
+.app {
+    max-width: 1200px;
+}
+@media (max-width: 768px) {
+    .app {
+        padding: 15px;
+        margin: 10px;
+    }
+}

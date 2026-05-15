@@ -1,0 +1,6 @@
+@proyectKN_API_HostAddress = http://localhost:5105
+
+GET {{proyectKN_API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

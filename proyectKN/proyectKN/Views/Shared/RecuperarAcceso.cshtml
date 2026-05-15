@@ -1,0 +1,53 @@
+﻿@model proyectKN.Models.RecuperarAccesoRequest
+@{
+    ViewData["Title"] = "Recuperar Acceso";
+    Layout = "_LayoutExterno";
+}
+<link rel="stylesheet" href="~/css/recuperarcontraseña.css" />
+<div class="recuperar-wrapper">
+
+    <div class="recuperar-container">
+
+        <img src="~/img/taller-union.png" class="recuperar-logo" />
+
+        <div class="recuperar-card">
+
+            <p class="titulo-recuperar">Recuperar contraseña</p>
+            <p class="texto-recuperar">Para recuperar su contraseña ingrese su correo.</p>
+
+            @if (ViewBag.Mensaje != null)
+            {
+                <div class="alert alert-danger">
+                    @ViewBag.Mensaje
+                </div>
+            }
+
+            <form asp-action="RecuperarAcceso" method="post">
+
+                <label>Correo</label>
+                <input type="email" asp-for="Correo" placeholder="usuario@email.com" required />
+
+                <button type="submit">Recuperar acceso</button>
+
+                <a asp-controller="Home" asp-action="Login">
+                    Volver al Login
+                </a>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+<footer class="footer-alt py-4 mt-auto">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-0 ">
+                    © <script>document.write(new Date().getFullYear())</script> Taller La Unión
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

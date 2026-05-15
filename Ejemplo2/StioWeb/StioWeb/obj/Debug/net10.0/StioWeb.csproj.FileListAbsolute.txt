@@ -1,0 +1,315 @@
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\appsettings.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.staticwebassets.runtime.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.staticwebassets.endpoints.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.exe
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.deps.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.runtimeconfig.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.dll
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.pdb
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.AssemblyInfoInputs.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.AssemblyInfo.cs
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.csproj.CoreCompileInputs.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.RazorAssemblyInfo.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.RazorAssemblyInfo.cs
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\bundle\StioWeb.styles.css
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\projectbundle\StioWeb.bundle.scp.css
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\gt9ze54kt2-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fox5q9ltrc-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\bxiy82s16j-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\c6v32sm9k7-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\uwl7npgrbp-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\893ds5l064-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\aco97wsp8u-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\yrm45dqpuu-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\n09ctrpxn6-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\14p5qzve09-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\sdslt8delz-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\z9e4pscufr-{0}-ub07r2b239-ub07r2b239.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\vxz4lk9n6q-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\tqntkyxcn4-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\gaz561mctn-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\2v2hcp5xsa-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\og1f2luzde-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\f0pbdtrq63-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\lcpmgmbat6-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\27myd8uhyl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\1y536z1wxf-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\a3ukqm6i9m-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\s0qgl00rwe-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\qfeiw1zqbg-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6wbr2jq3au-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\f0j36rwcc8-{0}-06098lyss8-06098lyss8.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\qeq0qw96g6-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\d7k2zzodaw-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\3yeozilzke-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\tyxf05d7r7-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\y7myrvftbr-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\37s8ymag08-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\2d8k8jwipn-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6b45yudaae-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\v028fp53tt-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\oxhgoy8q7h-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h4ch5esf5k-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\cmol41eahn-{0}-493y06b0oq-493y06b0oq.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\zy3nfc4j3r-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\97inyxwuy1-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\v110hhqgnc-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fwc6fpedmy-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\vvd8lrf61l-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\1qlbyqkw87-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\72kq4ypqm6-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\q74o41i8yr-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\27c6q00ffq-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h1lq1apct1-{0}-47otxtyo56-47otxtyo56.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9ekmisd7qv-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\29oy3zqefn-{0}-356vix0kms-356vix0kms.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fun0pkc35i-{0}-83jwlth58m-83jwlth58m.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\osub7zpq45-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\sft3do6bvx-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\04rup0si6y-{0}-ag7o75518u-ag7o75518u.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9j73ih957v-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\a9r37249dj-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6zgsuifnca-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9t60qgex2v-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\7jdqnqhl57-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\rfyqh9vc5d-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\ljor520uac-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\7862rs4axl-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\j8q218vv96-{0}-v81qquhggl-v81qquhggl.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\mye2ku0kql-{0}-v81qquhggl-v81qquhggl.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.dll
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\refint\StioWeb.dll
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.pdb
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.genruntimeconfig.cache
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\ref\StioWeb.dll
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\4kjdcutz4a-{0}-2l7z0ly8ve-2l7z0ly8ve.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\0kceefzrq1-{0}-3xhf6cznn9-3xhf6cznn9.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\e6qxb222gv-{0}-vu3kklfnoq-vu3kklfnoq.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\ql2a9qkp4s-{0}-sb3qvjp5n8-sb3qvjp5n8.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h5f74rfnz2-{0}-u37forbsvx-u37forbsvx.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6ct13t2bkg-{0}-0jl4p39k4i-0jl4p39k4i.gz
+C:\Users\arias\OneDrive\Escritorio\Programación Avanzada Web\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\dujjbjp0o1-{0}-ymwlg7y6oo-ymwlg7y6oo.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\appsettings.Development.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\appsettings.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.staticwebassets.runtime.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.staticwebassets.endpoints.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.exe
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.deps.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.runtimeconfig.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.dll
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.pdb
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.AssemblyInfoInputs.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.AssemblyInfo.cs
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.csproj.CoreCompileInputs.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.RazorAssemblyInfo.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.RazorAssemblyInfo.cs
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\bundle\StioWeb.styles.css
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\projectbundle\StioWeb.bundle.scp.css
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\gt9ze54kt2-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\dujjbjp0o1-{0}-ymwlg7y6oo-ymwlg7y6oo.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\4kjdcutz4a-{0}-2l7z0ly8ve-2l7z0ly8ve.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fox5q9ltrc-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\0kceefzrq1-{0}-3xhf6cznn9-3xhf6cznn9.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\e6qxb222gv-{0}-vu3kklfnoq-vu3kklfnoq.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\ql2a9qkp4s-{0}-sb3qvjp5n8-sb3qvjp5n8.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h5f74rfnz2-{0}-u37forbsvx-u37forbsvx.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6ct13t2bkg-{0}-0jl4p39k4i-0jl4p39k4i.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\bxiy82s16j-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\c6v32sm9k7-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\uwl7npgrbp-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\893ds5l064-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\aco97wsp8u-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\yrm45dqpuu-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\n09ctrpxn6-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\14p5qzve09-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\sdslt8delz-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\z9e4pscufr-{0}-ub07r2b239-ub07r2b239.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\vxz4lk9n6q-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\tqntkyxcn4-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\gaz561mctn-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\2v2hcp5xsa-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\og1f2luzde-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\f0pbdtrq63-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\lcpmgmbat6-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\27myd8uhyl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\1y536z1wxf-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\a3ukqm6i9m-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\s0qgl00rwe-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\qfeiw1zqbg-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6wbr2jq3au-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\f0j36rwcc8-{0}-06098lyss8-06098lyss8.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\qeq0qw96g6-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\d7k2zzodaw-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\3yeozilzke-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\tyxf05d7r7-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\y7myrvftbr-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\37s8ymag08-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\2d8k8jwipn-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6b45yudaae-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\v028fp53tt-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\oxhgoy8q7h-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h4ch5esf5k-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\cmol41eahn-{0}-493y06b0oq-493y06b0oq.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\zy3nfc4j3r-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\97inyxwuy1-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\v110hhqgnc-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fwc6fpedmy-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\vvd8lrf61l-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\1qlbyqkw87-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\72kq4ypqm6-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\q74o41i8yr-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\27c6q00ffq-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h1lq1apct1-{0}-47otxtyo56-47otxtyo56.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9ekmisd7qv-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\29oy3zqefn-{0}-356vix0kms-356vix0kms.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fun0pkc35i-{0}-83jwlth58m-83jwlth58m.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\osub7zpq45-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\sft3do6bvx-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\04rup0si6y-{0}-ag7o75518u-ag7o75518u.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9j73ih957v-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\a9r37249dj-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6zgsuifnca-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9t60qgex2v-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\7jdqnqhl57-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\rfyqh9vc5d-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\ljor520uac-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\7862rs4axl-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\j8q218vv96-{0}-v81qquhggl-v81qquhggl.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\mye2ku0kql-{0}-v81qquhggl-v81qquhggl.gz
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.development.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\swae.build.ex.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.dll
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\refint\StioWeb.dll
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.pdb
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.genruntimeconfig.cache
+C:\Ejemplo2\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\ref\StioWeb.dll
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\appsettings.Development.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.staticwebassets.endpoints.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\appsettings.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.staticwebassets.runtime.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.exe
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.deps.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.runtimeconfig.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.dll
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\bin\Debug\net10.0\StioWeb.pdb
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.AssemblyInfoInputs.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.AssemblyInfo.cs
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.csproj.CoreCompileInputs.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.RazorAssemblyInfo.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.RazorAssemblyInfo.cs
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.sourcelink.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\bundle\StioWeb.styles.css
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\scopedcss\projectbundle\StioWeb.bundle.scp.css
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\gt9ze54kt2-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\0kceefzrq1-{0}-3xhf6cznn9-3xhf6cznn9.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\e6qxb222gv-{0}-vu3kklfnoq-vu3kklfnoq.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\ql2a9qkp4s-{0}-sb3qvjp5n8-sb3qvjp5n8.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h5f74rfnz2-{0}-u37forbsvx-u37forbsvx.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6ct13t2bkg-{0}-0jl4p39k4i-0jl4p39k4i.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\bxiy82s16j-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\c6v32sm9k7-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\uwl7npgrbp-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\893ds5l064-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\aco97wsp8u-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\yrm45dqpuu-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\n09ctrpxn6-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\14p5qzve09-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\sdslt8delz-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\z9e4pscufr-{0}-ub07r2b239-ub07r2b239.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\vxz4lk9n6q-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\tqntkyxcn4-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\gaz561mctn-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\2v2hcp5xsa-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\og1f2luzde-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\f0pbdtrq63-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\lcpmgmbat6-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\27myd8uhyl-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\1y536z1wxf-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\a3ukqm6i9m-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\s0qgl00rwe-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\qfeiw1zqbg-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6wbr2jq3au-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\f0j36rwcc8-{0}-06098lyss8-06098lyss8.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\qeq0qw96g6-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\d7k2zzodaw-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\3yeozilzke-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\tyxf05d7r7-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\y7myrvftbr-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\37s8ymag08-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\2d8k8jwipn-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6b45yudaae-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\v028fp53tt-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\oxhgoy8q7h-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h4ch5esf5k-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\cmol41eahn-{0}-493y06b0oq-493y06b0oq.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\zy3nfc4j3r-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\97inyxwuy1-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\v110hhqgnc-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fwc6fpedmy-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\vvd8lrf61l-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\1qlbyqkw87-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\72kq4ypqm6-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\q74o41i8yr-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\27c6q00ffq-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\h1lq1apct1-{0}-47otxtyo56-47otxtyo56.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9ekmisd7qv-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\29oy3zqefn-{0}-356vix0kms-356vix0kms.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\fun0pkc35i-{0}-83jwlth58m-83jwlth58m.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\osub7zpq45-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\sft3do6bvx-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\04rup0si6y-{0}-ag7o75518u-ag7o75518u.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9j73ih957v-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\a9r37249dj-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\6zgsuifnca-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\9t60qgex2v-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\7jdqnqhl57-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\rfyqh9vc5d-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\ljor520uac-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\7862rs4axl-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\j8q218vv96-{0}-v81qquhggl-v81qquhggl.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\mye2ku0kql-{0}-v81qquhggl-v81qquhggl.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.development.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\swae.build.ex.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.dll
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\refint\StioWeb.dll
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.pdb
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\StioWeb.genruntimeconfig.cache
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\ref\StioWeb.dll
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\dujjbjp0o1-{0}-6qxrfh39l8-6qxrfh39l8.gz
+C:\ProyectoFinal\Ejemplo2\StioWeb\StioWeb\obj\Debug\net10.0\compressed\4kjdcutz4a-{0}-yrqyg1bd38-yrqyg1bd38.gz

@@ -1,0 +1,575 @@
+[
+  {
+    "ContainingType": "proyectKN_API.Controllers.CitaController",
+    "Method": "CancelarCita",
+    "RelativePath": "api/Cita/CancelarCita/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.CitaController",
+    "Method": "ConsultarCita",
+    "RelativePath": "api/Cita/ConsultarCita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.CitaController",
+    "Method": "EditarCita",
+    "RelativePath": "api/Cita/EditarCita",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.CitaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.CitaController",
+    "Method": "ObtenerCitaId",
+    "RelativePath": "api/Cita/ObtenerCitaId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.CitaController",
+    "Method": "ObtenerHorasOcupadas",
+    "RelativePath": "api/Cita/ObtenerHorasOcupadas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fecha",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "idCita",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.CitaController",
+    "Method": "RegistroCita",
+    "RelativePath": "api/Cita/RegistroCita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.CitaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "ConsultarEgreso",
+    "RelativePath": "api/Contabilidad/ConsultarEgreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "ConsultarIngreso",
+    "RelativePath": "api/Contabilidad/ConsultarIngreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "EditarEgreso",
+    "RelativePath": "api/Contabilidad/EditarEgreso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.EgresoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "EditarIngreso",
+    "RelativePath": "api/Contabilidad/EditarIngreso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.IngresoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "ObtenerEgresoId",
+    "RelativePath": "api/Contabilidad/ObtenerEgresoId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "ObtenerIngresoId",
+    "RelativePath": "api/Contabilidad/ObtenerIngresoId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "RegistrarEgreso",
+    "RelativePath": "api/Contabilidad/RegistrarEgreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.EgresoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ContabilidadController",
+    "Method": "RegistrarIngreso",
+    "RelativePath": "api/Contabilidad/RegistrarIngreso",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.IngresoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.EstadoController",
+    "Method": "ObtenerEstado",
+    "RelativePath": "api/Estado/ObtenerEstado/{idTipo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTipo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.HomeController",
+    "Method": "IniciarSesion",
+    "RelativePath": "api/Home/IniciarSesion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.HomeController",
+    "Method": "RecuperarAcceso",
+    "RelativePath": "api/Home/RecuperarAcceso",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.RecuperarAccesoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.InventarioController",
+    "Method": "ConsultarInventario",
+    "RelativePath": "api/Inventario/ConsultarInventario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.InventarioController",
+    "Method": "EditarInventario",
+    "RelativePath": "api/Inventario/EditarInventario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.InventarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.InventarioController",
+    "Method": "ObtenerInventarioId",
+    "RelativePath": "api/Inventario/ObtenerInventarioId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.InventarioController",
+    "Method": "ObtenerProveedoresId",
+    "RelativePath": "api/Inventario/ObtenerProveedoresId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.InventarioController",
+    "Method": "RegistroInventario",
+    "RelativePath": "api/Inventario/RegistroInventario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.InventarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ProveedorController",
+    "Method": "CConsultarProveedor",
+    "RelativePath": "api/Proveedor/ConsultarProveedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ProveedorController",
+    "Method": "EditarProveedor",
+    "RelativePath": "api/Proveedor/EditarProveedor",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.ProveedorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ProveedorController",
+    "Method": "ObtenerProveedores",
+    "RelativePath": "api/Proveedor/ObtenerProveedores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ProveedorController",
+    "Method": "RegistroProveedor",
+    "RelativePath": "api/Proveedor/RegistroProveedor",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.ProveedorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ReporteController",
+    "Method": "GenerarReporte",
+    "RelativePath": "api/Reporte/GenerarReporte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "desde",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "hasta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.ReporteController",
+    "Method": "ResumenCitas",
+    "RelativePath": "api/Reporte/ResumenCitas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "desde",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "hasta",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.RolController",
+    "Method": "ObtenerRoles",
+    "RelativePath": "api/Rol/ObtenerRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.UsuarioController",
+    "Method": "ConsultarUsuarios",
+    "RelativePath": "api/Usuario/ConsultarUsuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.UsuarioController",
+    "Method": "EditarUsuario",
+    "RelativePath": "api/Usuario/EditarUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.UsuarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.UsuarioController",
+    "Method": "ObtenerUsuario",
+    "RelativePath": "api/Usuario/ObtenerUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.UsuarioController",
+    "Method": "ObtenerUsuarioId",
+    "RelativePath": "api/Usuario/ObtenerUsuarioId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.UsuarioController",
+    "Method": "RegistroUsuario",
+    "RelativePath": "api/Usuario/RegistroUsuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.UsuarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.VehiculoController",
+    "Method": "ConsultarVehiculo",
+    "RelativePath": "api/Vehiculo/ConsultarVehiculos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.VehiculoController",
+    "Method": "EditarVehiculo",
+    "RelativePath": "api/Vehiculo/EditarVehiculo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.VehiculoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.VehiculoController",
+    "Method": "ObtenerVehiculoId",
+    "RelativePath": "api/Vehiculo/ObtenerVehiculoId/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "proyectKN_API.Controllers.VehiculoController",
+    "Method": "RegistrarVehiculo",
+    "RelativePath": "api/Vehiculo/RegistrarVehiculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "proyectKN_API.Models.VehiculoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

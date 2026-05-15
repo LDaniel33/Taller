@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProyectoFinal\\proyectKN_API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76FB83-6C75-6E8A-E80C-301AA23347F4}|proyectKN_API\\proyectKN_API.csproj|c:\\proyectofinal\\proyectkn_api\\proyectkn_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D76FB83-6C75-6E8A-E80C-301AA23347F4}|proyectKN_API\\proyectKN_API.csproj|solutionrelative:proyectkn_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76FB83-6C75-6E8A-E80C-301AA23347F4}|proyectKN_API\\proyectKN_API.csproj|c:\\proyectofinal\\proyectkn_api\\proyectkn_api\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76FB83-6C75-6E8A-E80C-301AA23347F4}|proyectKN_API\\proyectKN_API.csproj|solutionrelative:proyectkn_api\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 21,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\ProyectoFinal\\proyectKN_API\\proyectKN_API\\appsettings.json",
+              "RelativeDocumentMoniker": "proyectKN_API\\appsettings.json",
+              "ToolTip": "C:\\ProyectoFinal\\proyectKN_API\\proyectKN_API\\appsettings.json",
+              "RelativeToolTip": "proyectKN_API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-24T03:54:53.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CitaController.cs",
+              "DocumentMoniker": "C:\\ProyectoFinal\\proyectKN_API\\proyectKN_API\\Controllers\\CitaController.cs",
+              "RelativeDocumentMoniker": "proyectKN_API\\Controllers\\CitaController.cs",
+              "ToolTip": "C:\\ProyectoFinal\\proyectKN_API\\proyectKN_API\\Controllers\\CitaController.cs",
+              "RelativeToolTip": "proyectKN_API\\Controllers\\CitaController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T01:14:04.045Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+﻿@model proyectKN.Models.Inventario
+@{
+    ViewData["Title"] = "Editar Inventario";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+
+    <div class="profile-header">
+        <h2>Editar Inventario</h2>
+        <p>Modificar información del inventario</p>
+    </div>
+
+    <div class="card">
+
+        <form asp-action="EditarInventario" method="post" class="card-body">
+
+            <input type="hidden" asp-for="Consecutivo" />
+
+            <div class="row">
+
+                <div class="field">
+                    <label>Nombre del Articulo</label>
+                    <input type="text" asp-for="Nombre" readonly required  class="form-control" />
+                </div>
+
+                <div class="field">
+                    <label>Código Artículo</label>
+                    <input type="text" asp-for="IdArticulo" readonly required class="form-control" />
+                </div>
+
+                <div class="field">
+                    <label>Descripcion</label>
+                    <input type="text" asp-for="Descripcion" readonly required class="form-control" />
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+
+                <div class="field">
+                    <label>Precio Compra</label>
+                    <input type="number" asp-for="PrecioCompra" required class="form-control" />
+                </div>
+
+                <div class="field">
+                    <label>Precio Venta</label>
+                    <input type="number" asp-for="PrecioVenta" required class="form-control" />
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+
+                <div class="field">
+                    <label>Stock</label>
+                    <input type="number" asp-for="Stock" required class="form-control" />
+                </div>
+
+                <div class="field">
+                    <label>Stock Minimo</label>
+                    <input type="number" asp-for="StockMinimo" required class="form-control" />
+                </div>
+
+            </div>
+
+            <div class="row mt-3">
+
+                <div class="field">
+                    <label>Proveedor</label>
+
+                    <input type="text" class="form-control"
+                           value="@ViewBag.ProveedorNombre"
+                           readonly />
+
+                    <input type="hidden" asp-for="Proveedor" />
+                </div>
+
+            </div>
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                <a asp-action="RegistroInventario" class="btn btn-secondary">Cancelar</a>
+            </div>
+
+        </form>
+
+    </div>
+  
+
+</div>

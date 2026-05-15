@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Ingresos - Taller La Unión</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+:root{
+  --dark: #0B090A;
+  --dark-soft:#161A1D;
+  --red-dark:#660708;
+  --red-main:#A4161A;
+  --red-bold:#BA181B;
+  --red-soft:#E5383B;
+  --gray-1:#B1A7A6;
+  --gray-2:#D3D3D3;
+  --gray-3:#F5F3F4;
+  --white:#FFFFFF;
+}
+
+/* GENERAL */
+body{
+  background: var(--gray-3);
+  font-family: 'Helvetica', sans-serif;
+}
+
+.navbar{
+  background: var(--white);
+  border-bottom:4px solid var(--red-main);
+}
+
+.title{
+  color: var(--red-dark);
+  font-weight:600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+  border-radius:15px;
+  border:none;
+  background:var(--white);
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+/* FORM */
+.form-control,.form-select{
+  border-radius:10px;
+  border:1px solid var(--gray-2);
+  font-family: 'Helvetica', sans-serif;
+}
+
+.form-control:focus,.form-select:focus{
+  border-color: var(--red-main);
+  box-shadow:0 0 0 .10rem rgba(164,22,26,.25);
+}
+
+/* BOTONES */
+.btn-main{ 
+  background:var(--red-main); 
+  color:white; 
+  border:none; 
+  font-family: 'Helvetica', sans-serif;
+}
+.btn-main:hover{ background:var(--red-dark); }
+
+.btn-edit{ 
+  background:#A4161A; 
+  color:white; 
+  border:none; 
+  font-family: 'Helvetica', sans-serif;
+}
+.btn-edit:hover{ background:#660708; }
+
+.btn-delete{ 
+  background:#161A1D; 
+  color:white; 
+  border:none; 
+  font-family: 'Helvetica', sans-serif;
+}
+.btn-delete:hover{ background:black; }
+
+/* TABLA */
+.table thead{
+  background:var(--dark-soft);
+  color:white;
+  font-family: 'Arial', sans-serif;
+}
+
+.table td, .table th{
+  font-family: 'Helvetica', sans-serif;
+}
+
+/* BADGES Y DEUDA */
+.badge-completo{ background:var(--red-bold); }
+.badge-parcial{ background:var(--red-soft); }
+
+.text-deuda{
+  color:var(--red-main);
+  font-weight:600;
+}
+.btn-action{
+  margin-right:4px;
+  font-size:.85rem;
+  padding:4px 10px;
+  font-family: 'Helvetica', sans-serif;
+}
+</style>
+</head>
+
+<body>
+
+<nav class="navbar p-3">
+<div class="container">
+  <h4 class="title mb-0">
+    <i class="fa-solid fa-money-bill-trend-up"></i> Registro de Ingresos
+  </h4>
+</div>
+</nav>
+
+<div class="container mt-4">
+
+<!-- FORMULARIO -->
+<div class="card p-4 mb-4">
+<h5 style="font-family: Arial, sans-serif;">Nuevo ingreso</h5>
+
+<form id="formIngreso" class="row g-3">
+
+<div class="col-md-4">
+  <label class="form-label">Motivo</label>
+  <input id="motivo" type="text" class="form-control" required>
+</div>
+
+<div class="col-md-2">
+  <label class="form-label">Monto ($)</label>
+  <input id="monto" type="number" class="form-control" min="0" required>
+</div>
+
+<div class="col-md-2">
+  <label class="form-label">Pago</label>
+  <select class="form-select" id="tipoPago">
+    <option value="completo">Completo</option>
+    <option value="parcial">Parcial</option>
+  </select>
+</div>
+
+<div class="col-md-2">
+  <label class="form-label">Monto pagado</label>
+  <input id="pagado" type="number" class="form-control" min="0">
+</div>
+
+<div class="col-md-2">
+  <label class="form-label">Deuda ($)</label>
+  <input id="deuda" type="number" class="form-control" readonly>
+</div>
+
+<div class="col-md-2">
+  <label class="form-label">Fecha</label>
+  <input id="fecha" type="date" class="form-control" required>
+</div>
+
+<div class="col-md-12">
+  <button id="btnGuardar" class="btn btn-main">
+    Registrar ingreso
+  </button>
+</div>
+
+</form>
+</div>
+
+<!-- TABLA -->
+<div class="card p-4">
+<h5 style="font-family: Arial, sans-serif;">Historial de ingresos</h5>
+
+<table class="table table-hover">
+<thead>
+<tr>
+  <th>Motivo</th>
+  <th>Monto</th>
+  <th>Pagado</th>
+  <th>Deuda</th>
+  <th>Pago</th>
+  <th>Fecha</th>
+  <th>Acciones</th>
+</tr>
+</thead>
+
+<tbody id="tabla"></tbody>
+</table>
+</div>
+
+</div>
+
+<script>
+const tabla = document.getElementById("tabla");
+const form = document.getElementById("formIngreso");
+
+let editFila = null;
+
+/* INGRESOS PRE-CARGADOS */
+const ingresos = [
+ {
+  motivo:"Servicio de alineación",
+  monto:80,
+  pagado:80,
+  deuda:0,
+  tipo:"completo",
+  fecha:"2025-10-02"
+ },
+ {
+  motivo:"Cambio de frenos",
+  monto:220,
+  pagado:120,
+  deuda:100,
+  tipo:"parcial",
+  fecha:"2025-10-03"
+ },
+ {
+  motivo:"Mantenimiento general",
+  monto:150,
+  pagado:150,
+  deuda:0,
+  tipo:"completo",
+  fecha:"2025-10-04"
+ }
+];
+
+/* CALCULAR DEUDA */
+function calcularDeuda(){
+  let m = parseFloat(monto.value) || 0;
+  let p = parseFloat(pagado.value) || 0;
+  let d = Math.max(0, m - p);
+  
+  deuda.value = d.toFixed(2);
+}
+
+monto.addEventListener("input", calcularDeuda);
+pagado.addEventListener("input", calcularDeuda);
+
+/* RENDER */
+function render(){
+ tabla.innerHTML="";
+ ingresos.forEach((i,idx)=>{
+
+  let badge = i.tipo==="completo"
+   ? `<span class="badge badge-completo">Completo</span>`
+   : `<span class="badge badge-parcial">Parcial</span>`;
+
+  tabla.innerHTML += `
+   <tr>
+     <td>${i.motivo}</td>
+     <td>$${i.monto.toFixed(2)}</td>
+     <td>$${i.pagado.toFixed(2)}</td>
+     <td class="text-deuda">$${i.deuda.toFixed(2)}</td>
+     <td>${badge}</td>
+     <td>${i.fecha}</td>
+     <td>
+       <button class="btn btn-edit btn-action" onclick="editar(${idx})">
+        Editar
+       </button>
+       <button class="btn btn-delete btn-action" onclick="eliminar(${idx})">
+        Eliminar
+       </button>
+     </td>
+   </tr>
+  `;
+ });
+}
+
+/* ELIMINAR */
+function eliminar(idx){
+ if(confirm("¿Eliminar este ingreso?")){
+  ingresos.splice(idx,1);
+  render();
+ }
+}
+
+/* EDITAR */
+function editar(idx){
+ const i = ingresos[idx];
+ editFila = idx;
+
+ motivo.value = i.motivo;
+ monto.value = i.monto;
+ tipoPago.value = i.tipo;
+ pagado.value = i.pagado;
+ deuda.value = i.deuda.toFixed(2);
+ fecha.value = i.fecha;
+
+ btnGuardar.textContent = "Guardar cambios";
+}
+
+/* GUARDAR */
+form.addEventListener("submit", e=>{
+ e.preventDefault();
+
+ const data = {
+  motivo: motivo.value,
+  monto: parseFloat(monto.value),
+  pagado: parseFloat(pagado.value || monto.value),
+  deuda: parseFloat(deuda.value),
+  tipo: tipoPago.value,
+  fecha: fecha.value
+ };
+
+ if(editFila === null){
+  ingresos.push(data);
+ } else {
+  ingresos[editFila] = data;
+  editFila = null;
+  btnGuardar.textContent = "Registrar ingreso";
+ }
+
+ form.reset();
+ deuda.value = "";
+ render();
+});
+
+render();
+</script>
+
+</body>
+</html>

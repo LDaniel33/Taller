@@ -1,0 +1,126 @@
+﻿/* FONDO GENERAL (MISMO ESTILO) */
+body {
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c; /* 🔥 igual que tu login */
+    font-family: Arial, sans-serif;
+}
+
+/* WRAPPER */
+.recuperar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+/* CONTENEDOR */
+.recuperar-container {
+    text-align: center;
+}
+
+/* LOGO */
+.recuperar-logo {
+    width: 180px;
+    margin-bottom: -80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* CARD */
+.recuperar-card {
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a); /* 🔥 igual que login */
+    padding: 40px 35px;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: 0 40px 40px #2a2a2a; /* 🔥 mismo shadow */
+    color: white;
+}
+
+/* TITULO */
+.recuperar-card h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* TEXTO */
+    .recuperar-card p {
+        margin-bottom: 25px;
+        color: #ffffff; /* 🔥 igual estilo */
+    }
+
+/* LABEL */
+.recuperar-card label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+/* INPUT (MISMO ESTILO) */
+.recuperar-card input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #3a3a3a; /* 🔥 igual */
+    color: white;
+}
+
+/* BOTÓN (EXACTO AL TUYO) */
+.recuperar-card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #5fa8d3; /* 🔥 tu color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+.recuperar-card button:hover {
+    background: #4c94bd; /* leve efecto hover */
+}
+
+/* LINK */
+.recuperar-card a {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.recuperar-card a:hover {
+    text-decoration: underline;
+}
+
+.titulo-recuperar {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: left; /* 🔥 esto lo alinea a la izquierda */
+}
+
+.texto-recuperar {
+    text-align: left; /* 🔥 lo alinea a la izquierda */
+    color: white; /* opcional: mismo estilo que tu diseño */
+    margin-bottom: 20px;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #58151c;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

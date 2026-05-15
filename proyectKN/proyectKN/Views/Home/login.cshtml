@@ -1,0 +1,75 @@
+﻿@model proyectKN.Models.LoginRequest
+
+@{
+    ViewData["Title"] = "Iniciar Sesión";
+    Layout = "_LayoutExterno";
+}
+
+<link rel="stylesheet" href="~/css/login.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <div class="login-container">
+
+        <div class="login-left">
+            <img src="~/img/taller-union.png" alt="Taller La Unión">
+            </div>
+
+        
+            <div class="login-right">
+
+                <h2>INICIAR SESIÓN</h2>
+                <p>Ingrese sus credenciales para acceder al sistema</p>
+
+                @if (ViewBag.Mensaje != null)
+                {
+                    <div class="alert alert-danger text-center">
+                        @ViewBag.Mensaje
+                    </div>
+                }
+
+                <form asp-controller="Home" asp-action="Login" method="post">
+
+                    <label>Correo Electrónico</label>
+                    <input type="email"
+                           asp-for="Correo"
+                           placeholder="usuario@email.com"
+                           required>
+
+                        <label>Contraseña</label>
+                    <div class="input-password">
+                        <input type="password"
+                            id="password"
+                               asp-for="Contrasenna"
+                               placeholder="********"
+                               required>
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
+                        </div>
+                            <div class="forgot">
+                                <a asp-controller="Home"
+                                       asp-action="RecuperarAcceso">
+                                    ¿Olvidaste tu contraseña?
+                                </a>
+                            </div>
+
+                            <button type="submit">Iniciar sesión</button>
+
+                        </form>
+
+                        
+                    </div>
+                   
+                </div>
+                
+            
+            <footer class="footer-alt py-4 mt-auto">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p class="mb-0 ">
+                                © <script>document.write(new Date().getFullYear())</script> Taller La Unión
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <script src="~/js/login.js"></script>

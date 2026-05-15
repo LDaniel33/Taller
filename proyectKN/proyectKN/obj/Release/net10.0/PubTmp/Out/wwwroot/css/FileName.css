@@ -1,0 +1,139 @@
+﻿/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #000; /* negro más elegante */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Header flotante */
+.profile-header {
+    background: #5fa8d3;
+    color: #000;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+    width: 95%;
+    margin: 0 auto -45px;
+    position: relative;
+    z-index: 2;
+}
+
+    .profile-header h2 {
+        margin: 0;
+        font-weight: 600;
+    }
+
+    .profile-header p {
+        margin: 6px 0 0;
+        font-size: 14px;
+        opacity: 0.9;
+    }
+
+/* Card */
+.card {
+    background: #161b22;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* Card body */
+.card-body {
+    padding: 40px;
+}
+
+/* Grid */
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Campos */
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 13px;
+    color: #9ca3af;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+input,
+textarea {
+    border: none;
+    background: rgba(255,255,255,0.05);
+    border-bottom: 1px solid #444;
+    padding: 10px 6px;
+    font-size: 14px;
+    outline: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+    input:focus,
+    textarea:focus {
+        border-bottom: 2px solid #5fa8d3;
+        background: rgba(255,255,255,0.08);
+    }
+
+textarea {
+    resize: none;
+}
+
+/* Botón */
+.btn {
+    background: #5fa8d3;
+    color: #000;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+    .btn:hover {
+        background: #4a94c2;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(95,168,211,0.4);
+    }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        width: 100%;
+        margin-bottom: -30px;
+    }
+
+    .card-body {
+        padding: 25px;
+    }
+}
+
+.ReadOnly {
+    cursor: not-allowed
+}
+

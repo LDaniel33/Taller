@@ -1,0 +1,131 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFramework = net10.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.RootNamespace = proyectKN
+build_property.RootNamespace = proyectKN
+build_property.ProjectDir = C:\ProyectoFinal\proyectKN\proyectKN\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\ProyectoFinal\proyectKN\proyectKN
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Cita/EditarCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxFZGl0YXJDaXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Cita/RegistroCita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2l0YVxSZWdpc3Ryb0NpdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Contavilidad/EditarEgreso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF2aWxpZGFkXEVkaXRhckVncmVzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Contavilidad/EditarIngreso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF2aWxpZGFkXEVkaXRhckluZ3Jlc28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Contavilidad/RegistroEgreso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF2aWxpZGFkXFJlZ2lzdHJvRWdyZXNvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Contavilidad/RegistroIngreso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF2aWxpZGFkXFJlZ2lzdHJvSW5ncmVzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Home/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Inventario/EditarInventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xFZGl0YXJJbnZlbnRhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Inventario/RegistroInventario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50YXJpb1xSZWdpc3Ryb0ludmVudGFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Proveedor/EditarProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXEVkaXRhclByb3ZlZWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Proveedor/RegistroProveedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXFJlZ2lzdHJvUHJvdmVlZG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Reporteria/Reporteria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXJpYVxSZXBvcnRlcmlhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Shared/RecuperarAcceso.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFJlY3VwZXJhckFjY2Vzby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Usuario/EditarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Usuario/RegistroUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3Ryb1VzdWFyaW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Vehiculo/EditarVehiculo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cRWRpdGFyVmVoaWN1bG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Vehiculo/RegistroVehiculo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWN1bG9cUmVnaXN0cm9WZWhpY3Vsby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-z3k52i4zpl
+
+[C:/ProyectoFinal/proyectKN/proyectKN/Views/Shared/_LayoutExterno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRFeHRlcm5vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-dgpcv7lxgu

@@ -1,0 +1,112 @@
+﻿@model proyectKN.Models.Ingreso
+@{
+    ViewData["Title"] = "RegistroIngreso";
+    Layout = "_Layout";
+}
+
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/cards.css" />
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        <!-- Header flotante -->
+        <div class="profile-header">
+            <h2>Registro de Ingreso</h2>
+            <p>Registrar un nuevo Ingreso</p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="card">
+            <form asp-action="RegistroIngreso"
+                  asp-controller="Contavilidad"
+                  method="post"
+                  class="card-body">
+
+                <div class="row">
+                    <div class="field">
+                        <label>Descripción</label>
+                        <input type="text" asp-for="Descripcion" class="form-control" required>
+
+                        </div>
+                        <div class="field">
+                            <label>Monto</label>
+                            <input type="number" id="Monto" asp-for="Monto" class="form-control" required>
+
+                            </div>
+                        </div>
+
+                            <div class="row">
+                                <div class="field">
+                                    <label>Deuda(₡)</label>
+                                    <input type="number" id="Saldo_Pendiente" asp-for="Saldo_Pendiente" class="form-control" required oninput="validarIngreso()">
+                                    </div>
+                            </div>
+                            <button type="submit" class="btn">Crear</button>
+
+                        </form>
+                    </div>
+
+                    <!-- TABLA -->
+                    <div class="table-registros">
+                        <div class="table-title">Ingresos Registrados</div>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Descipción del ingreso</th>
+                                    <th>Monto</th>
+                                    <th>Deuda</th>
+                                    <th>Fecha de registro</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (ViewBag.Ingreso != null)
+                                {
+                                    foreach (var item in ViewBag.Ingreso)
+                                    {
+                                        <tr>
+                                            <td>@item.Descripcion</td>
+                                            <td>@item.Monto</td>
+                                            <td>@item.Saldo_Pendiente</td>
+                                            <td>@item.Fecha</td>
+                                            <td>@item.Estado</td>
+
+                                            <td>
+
+
+                                                <a asp-controller="Contavilidad"
+                                                       asp-action="EditarIngreso"
+                                                       asp-route-id="@item.Consecutivo"
+                                                       class="btn btn-warning btn-sm">
+                                                    Editar
+                                                </a>
+
+                                    
+                                            </td>
+                                        </tr>
+                                    }
+                                }
+                                else
+                                {
+                                    <tr>
+                                        <td colspan="5" class="text-center text-muted text-white">
+                                            No hay productos registrados
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+             
+                <!-- JS -->
+            </body>

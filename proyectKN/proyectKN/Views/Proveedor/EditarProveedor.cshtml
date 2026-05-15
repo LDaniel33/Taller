@@ -1,0 +1,62 @@
+﻿@model proyectKN.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Editar Proveedor";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4"></div>
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+
+
+<div class="profile-header">
+    <h2>Editar Proveedor</h2>
+</div>
+
+
+<div class="card">
+
+    <form asp-action="EditarProveedor" method="post" class="card-body">
+
+        <input type="hidden" asp-for="Consecutivo" />
+
+        <div class="row">
+
+            <div class="field">
+                <label>Nombre</label>
+                <input asp-for="Nombre" class="form-control" readonly required>
+            </div>
+
+            <div class="field">
+                <label>Telefono</label>
+                <input asp-for="Telefono" class="form-control" required>
+            </div>
+
+            <div class="field">
+                <label>Correo</label>
+                <input asp-for="Correo" class="form-control" required>
+            </div>
+
+            <div class="field">
+                <label>Direccion</label>
+                <input asp-for="Direccion" class="form-control"required>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-warning">
+           Guardar Cambios
+        </button>
+
+        <a asp-action="RegistroProveedor" class="btn btn-secondary">
+            Cancelar
+        </a>
+
+    </form>
+
+</div>

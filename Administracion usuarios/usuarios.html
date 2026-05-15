@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Gestión de Usuarios</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- Google Fonts Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --dark:#0B090A;
+ --dark-soft:#161A1D;
+ --red-dark:#660708;
+ --red-main:#A4161A;
+ --red-strong:#BA181B;
+ --gray-1:#B1A7A6;
+ --gray-2:#D3D3D3;
+ --gray-3:#F5F3F4;
+ --white:#FFFFFF;
+}
+
+/* TIPOGRAFÍAS */
+h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+label {
+    font-family: Arial, sans-serif;
+    font-weight: normal; /* quitar negrita */
+}
+
+body, input, textarea, select, button, table, td, th {
+    font-family: Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+ background:var(--gray-3);
+}
+
+/* NAVBAR */
+.navbar{
+  background:var(--white);
+  border-bottom:4px solid var(--red-main);
+}
+.title{
+  color:var(--red-dark);
+  font-weight:600;
+}
+
+/* CARDS */
+.card{
+ border:none;
+ background:#fff;
+ border-radius:15px;
+ box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+/* INPUTS */
+.form-control, .form-select{
+ border-radius:10px;
+}
+.form-control:focus, .form-select:focus{
+ border-color:var(--red-main);
+ box-shadow:0 0 0 .15rem rgba(164,22,26,.25);
+}
+
+/* BUTTONS */
+.btn-pill{
+  background:var(--red-main);
+  color:var(--white);
+  border:none;
+  border-radius:30px;
+  padding:8px 22px;
+  font-weight:600;
+}
+.btn-pill:hover{
+ background:var(--red-dark);
+}
+
+.btn-edit{
+ background:var(--red-main);
+ color:#fff;
+ border:none;
+}
+.btn-edit:hover{ background:var(--red-dark); }
+
+.btn-delete{
+ background:var(--dark-soft);
+ color:#fff;
+ border:none;
+}
+.btn-delete:hover{ background:var(--dark); }
+
+/* TABLE */
+.table thead{
+ background:var(--dark-soft);
+ color:#fff;
+}
+.table td,.table th{ vertical-align:middle; }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar p-3">
+  <div class="container">
+    <h4 class="title mb-0">
+      <i class="fa-solid fa-users"></i> Gestión de Usuarios
+    </h4>
+  </div>
+</nav>
+
+<div class="container mt-4">
+
+<!-- FORM -->
+<div class="card p-4 mb-4">
+
+<h5 class="mb-3">Gestión de Usuarios</h5>
+
+<form id="formUsuario" class="row g-3">
+
+<input type="hidden" id="editIndex"/>
+
+<div class="col-md-3">
+<label>Nombre</label>
+<input type="text" class="form-control" id="nombre" required>
+</div>
+
+<div class="col-md-3">
+<label>Apellido</label>
+<input type="text" class="form-control" id="apellido" required>
+</div>
+
+<div class="col-md-3">
+<label>Cédula</label>
+<input type="text" class="form-control" id="cedula" required>
+</div>
+
+<div class="col-md-3">
+<label>Teléfono</label>
+<input type="tel" class="form-control" id="telefono" required>
+</div>
+
+<div class="col-md-4">
+<label>Correo</label>
+<input type="email" class="form-control" id="correo" required>
+</div>
+
+<div class="col-md-4">
+<label>Contraseña</label>
+<input type="password" class="form-control" id="password" required>
+</div>
+
+<div class="col-md-2">
+<label>Rol</label>
+<select id="rol" class="form-select">
+ <option>Administrador</option>
+ <option>Gerente</option>
+ <option>Mecánico</option>
+ <option>Encargado</option>
+</select>
+</div>
+
+<div class="col-md-2">
+<label>Estado</label>
+<select id="estado" class="form-select">
+ <option>Activo</option>
+ <option>Inactivo</option>
+</select>
+</div>
+
+<div class="col-12 text-center mt-3">
+<button class="btn btn-pill">
+  Registrar usuario
+</button>
+</div>
+
+</form>
+
+</div>
+
+<!-- TABLE -->
+<div class="card p-4">
+
+<h5 class="mb-3">Registro de usuarios</h5>
+
+<div class="table-responsive">
+
+<table class="table table-hover">
+
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Cédula</th>
+<th>Correo</th>
+<th>Teléfono</th>
+<th>Rol</th>
+<th>Estado</th>
+<th>Acciones</th>
+</tr>
+</thead>
+
+<tbody id="tablaUsuarios"></tbody>
+
+</table>
+
+</div>
+</div>
+
+</div>
+
+<script>
+const form=document.getElementById("formUsuario");
+const tabla=document.getElementById("tablaUsuarios");
+
+let usuarios=[
+ {nombre:"Luis Fernez",apellido:"Mora",cedula:"0987766554",telefono:"0991112233",correo:"luis@mail.com",password:"1234",rol:"Mecánico",estado:"Activo"},
+ {nombre:"Ana",apellido:"Suarez",cedula:"0912233445",telefono:"0982255667",correo:"ana@mail.com",password:"1234",rol:"Encargado",estado:"Activo"},
+ {nombre:"Pedro",apellido:"Torres",cedula:"1723344556",telefono:"0974455667",correo:"pedro@mail.com",password:"1234",rol:"Gerente",estado:"Inactivo"}
+];
+
+function render(){
+ tabla.innerHTML="";
+ usuarios.forEach((u,i)=>{
+ tabla.innerHTML+=`
+<tr>
+<td>${u.nombre} ${u.apellido}</td>
+<td>${u.cedula}</td>
+<td>${u.correo}</td>
+<td>${u.telefono}</td>
+<td>${u.rol}</td>
+<td>${u.estado}</td>
+<td>
+<button class="btn btn-sm btn-edit" onclick="editar(${i})">Editar</button>
+<button class="btn btn-sm btn-delete" onclick="eliminar(${i})">Eliminar</button>
+</td>
+</tr>
+`;
+});
+}
+
+form.addEventListener("submit",e=>{
+ e.preventDefault();
+
+ let data={
+  nombre:nombre.value,
+  apellido:apellido.value,
+  cedula:cedula.value,
+  telefono:telefono.value,
+  correo:correo.value,
+  password:password.value,
+  rol:rol.value,
+  estado:estado.value
+ };
+
+ if(editIndex.value===""){
+  usuarios.push(data);
+ } else {
+  usuarios[editIndex.value]=data;
+  editIndex.value="";
+ }
+
+ form.reset();
+ render();
+});
+
+function editar(i){
+ let u=usuarios[i];
+
+ nombre.value=u.nombre;
+ apellido.value=u.apellido;
+ cedula.value=u.cedula;
+ telefono.value=u.telefono;
+ correo.value=u.correo;
+ password.value=u.password;
+ rol.value=u.rol;
+ estado.value=u.estado;
+
+ editIndex.value=i;
+}
+
+function eliminar(i){
+ if(confirm("¿Eliminar usuario?")){
+  usuarios.splice(i,1);
+  render();
+ }
+}
+
+render();
+</script>
+
+</body>
+</html>

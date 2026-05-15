@@ -1,0 +1,106 @@
+﻿@model proyectKN.Models.Proveedor
+
+@{
+    ViewData["Title"] = "Registro de Proveedores";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4"></div>
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+<div id="errorGeneral" class="alert alert-danger text-center" style="display:none;">
+    Se deben completar los campos obligatorios
+</div>
+<!-- Header -->
+<div class="profile-header">
+    <h2>Registro de Proveedores</h2>
+    <p>Registrar un nuevo Proveedor</p>
+</div>
+
+
+<!-- FORMULARIO -->
+<div class="card">
+    <form asp-action="RegistroProveedor" method="post" id="formRegistro" class="card-body">
+
+        <div class="row">
+
+            <div class="field">
+                <label>Nombre del Proveedor</label>
+                <input type="text" asp-for="Nombre" class="form-control" placeholder="Proveedor XYZ"  required>
+            </div>
+
+            <div class="field">
+                <label>Teléfono</label>
+                <input type="text" asp-for="Telefono" class="form-control" placeholder="8888-8888" maxlength="8" required>
+            </div>
+
+            <div class="field">
+                <label>Correo</label>
+                <input type="email" asp-for="Correo" class="form-control" placeholder="proveedor@email.com" required>
+            </div>
+
+            <div class="field">
+                <label>Dirección</label>
+                <input type="text" asp-for="Direccion" class="form-control" placeholder="San José, Costa Rica" required>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn">Crear</button>
+
+    </form>
+</div>
+
+<!-- TABLA -->
+<div class="table-registros">
+    <div class="table-title">Registro de Proveedores</div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+                <th>Dirección</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (ViewBag.Proveedores != null)
+            {
+                foreach (var item in ViewBag.Proveedores)
+                {
+                    <tr>
+                        <td>@item.Nombre</td>
+                        <td>@item.Telefono</td>
+                        <td>@item.Correo</td>
+                        <td>@item.Direccion</td>
+                        <td>
+                            <a asp-controller="Proveedor"
+                               asp-action="EditarProveedor"
+                               asp-route-id="@item.Consecutivo"
+                               class="btn btn-warning">
+                                Editar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">
+                        No hay proveedores registrados
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+<script src="~/js/proveedor.js"></script>

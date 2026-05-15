@@ -1,0 +1,73 @@
+﻿@model proyectKN.Models.Egreso
+@{
+    ViewData["Title"] = "RegistroEgreso";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+
+    <!-- Header flotante -->
+    <div class="profile-header">
+        <h2>Editar de Egreso</h2>
+        <p>Modificar los datos del egreso</p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="card">
+        <form asp-action="EditarEgreso"
+              asp-controller="Contavilidad"
+              method="post"
+              class="card-body">
+            <input type="hidden" asp-for="Consecutivo" />
+            <div class="row">
+                <div class="field">
+                    <label>Motivo del Egreso</label>
+                    <input type="text" asp-for="Motivo" class="form-control" readonly required>
+
+                    </div>
+
+                    <div class="field">
+                        <label>Monto</label>
+                        <input type="text" asp-for="Monto" class="form-control" readonly required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="field">
+                            <label>Cantidad de articulos</label>
+                            <input type="number" asp-for="Cantidad" class="form-control" required>
+
+                            </div>
+
+                            <div class="field">
+                                <label>Metodo de pago</label>
+                                <select asp-for="MetodoPago" class="form-control" required>
+                                    <option value="Tarjeta">Tarjeta</option>
+                                    <option value="Efectivo">Efectivo</option>
+                                    <option value="Sinpe">Sinpe</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label>Usuario</label>
+                                <select asp-for="RegistradoPor" class="form-control" required>
+                                    <option value="">Seleccione un Usuario</option>
+                                    @if (ViewBag.Usuario != null)
+                                    {
+                                        foreach (var e in ViewBag.Usuario)
+                                        {
+                                            <option value="@e.Consecutivo">@e.NombreCompleto</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn">Guardar</button>
+                        <a asp-action="RegistroEgreso" class="btn btn-secondary">Cancelar</a>
+                    </form>
+                </div>
+
+            </div>

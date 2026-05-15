@@ -1,0 +1,50 @@
+﻿@model proyectKN.Models.Ingreso
+@{
+    ViewData["Title"] = "EditarIngreso";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4">
+
+    <!-- Header flotante -->
+    <div class="profile-header">
+        <h2>Registro de Ingreso</h2>
+        <p>Registrar un nuevo Ingreso</p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="card">
+        <form asp-action="EditarIngreso"
+              asp-controller="Contavilidad"
+              method="post"
+              class="card-body">
+
+            <input type="hidden" asp-for="Consecutivo" />
+
+            <div class="row">
+                <div class="field">
+                    <label>Descripción</label>
+                    <input type="text" asp-for="Descripcion" class="form-control" readonly required>
+
+                    </div>
+                    <div class="field">
+                        <label>Monto</label>
+                        <input type="number" id="Monto" asp-for="Monto" class="form-control" required>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="field">
+                            <label>Deuda(₡)</label>
+                            <input type="number" id="Saldo_Pendiente" asp-for="Saldo_Pendiente" class="form-control" readonly required>
+
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn">Guardar</button>
+                        <a asp-action="RegistroIngreso" class="btn btn-secondary">Cancelar</a>
+                    </form>
+                </div>
+           

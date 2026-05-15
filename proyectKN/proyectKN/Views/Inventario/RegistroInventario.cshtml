@@ -1,0 +1,178 @@
+﻿@model proyectKN.Models.Inventario
+
+@{
+    ViewData["Title"] = "Registro de Inventario";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4"></div>
+
+<!-- Header -->
+
+<div class="profile-header">
+    <h2>Registro de Inventario</h2>
+    <p>Registrar un nuevo Producto</p>
+</div>
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<!-- FORMULARIO -->
+
+<div class="card">
+    <form asp-action="RegistroInventario" method="post" id="formRegistro" class="card-body">
+
+
+        <div class="row">
+
+            <div class="field">
+                <label>Nombre</label>
+                <input type="text" asp-for="Nombre" class="form-control" required>
+            </div>
+
+            <div class="field">
+                <label>IdArticulo</label>
+                <input type="text" asp-for="IdArticulo" class="form-control" placeholder="1187526" required>
+            </div>
+
+            <div class="field">
+                <label>Descripcion</label>
+                <input type="text" asp-for="Descripcion" class="form-control" placeholder="Aceite de motor" required>
+            </div>
+
+            <div class="field">
+                <label>PrecioCompra</label>
+                <input type="number" asp-for="PrecioCompra" class="form-control" placeholder="₡25.000" required>
+            </div>
+
+            <div class="field">
+                <label>PrecioVenta</label>
+                <input type="number" asp-for="PrecioVenta" class="form-control" placeholder="₡45.000" required>
+            </div>
+
+            <div class="field">
+                <label>Stock</label>
+                <input type="number" asp-for="Stock" class="form-control" required>
+            </div>
+
+            <div class="field">
+                <label>StockMinimo</label>
+                <input type="number" asp-for="StockMinimo" class="form-control" required>
+            </div>
+
+            <div class="field">
+                <label>Proveedor</label>
+                <select asp-for="Proveedor" class="form-control" required>
+                    <option value="">Seleccione un Proveedor</option>
+
+                    @if (ViewBag.Proveedor != null)
+                    {
+                        foreach (var p in ViewBag.Proveedor)
+                        {
+                            <option value="@p.Consecutivo">@p.Nombre </option>
+                        }
+                    }
+
+                </select>
+            </div>
+
+        </div>
+
+        <button type="submit" class="btn">Crear</button>
+
+    </form>
+
+</div>
+@if (ViewBag.Inventario != null)
+{
+    var productosBajos = ((List<InventarioConsulta>)ViewBag.Inventario)
+        .Where(x => x.Stock <= x.StockMinimo)
+        .ToList();
+
+    if (productosBajos.Any())
+    {
+            <div class="alert alert-warning alerta-stock">
+            <strong>⚠ Alerta de inventario:</strong>
+            Los siguientes productos tienen stock bajo:
+            <br />
+                                        @foreach (var p in productosBajos)
+                                        {
+                                            <strong>@p.Nombre</strong>
+
+                                            if (p != productosBajos.Last())
+                                            {
+                                                <text>, </text>
+                                            }
+                                        }
+
+                                    </div>
+                                }
+                            }
+
+<!-- TABLA -->
+
+<div class="table-registros">
+    <div class="table-title">Productos Registrados</div>
+  
+    <table>
+      
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>IdArticulo</th>
+                <th>Descripcion</th>
+                <th>PrecioCompra</th>
+                <th>PrecioVenta</th>
+                <th>Stock</th>
+                <th>StockMinimo</th>
+                <th>Proveedor</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @if (ViewBag.Inventario != null)
+            {
+                foreach (var item in ViewBag.Inventario)
+
+                {
+                 <tr class="@(item.Stock <= item.StockMinimo ? "fila-stock-bajo" : "")">
+                        <td>@item.Nombre</td>
+                        <td>@item.IdArticulo</td>
+                        <td>@item.Descripcion</td>
+                        <td>@item.PrecioCompra.ToString("C")</td>
+                        <td>@item.PrecioVenta.ToString("C")</td>
+                        <td>@item.Stock</td>
+                        <td>@item.StockMinimo</td>
+                        <td>@item.Proveedor</td>
+
+                        <td>
+                            <a asp-controller="Inventario"
+                               asp-action="EditarInventario"
+                               asp-route-id="@item.Consecutivo"
+                               class="btn btn-warning">
+                                Editar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="8" class="text-center text-muted">
+                        No hay inventarios registrados
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+   
+
+</div>
+
+

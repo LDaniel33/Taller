@@ -1,0 +1,179 @@
+﻿@model proyectKN.Models.Cita
+
+@{
+    ViewData["Title"] = "Registro de Citas";
+    Layout = "_Layout";
+
+}
+
+<div class="container mt-4"></div>
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+    <!-- Header -->
+    <div class="profile-header">
+        <h2>Registro de Citas</h2>
+        <p>Crear una nueva cita</p>
+    </div>
+
+
+    <!-- FORMULARIO -->
+
+    <div class="card">
+        <form asp-action="RegistroCita" method="post" id="formRegistro" class="card-body">
+
+            <!-- FILA 1 -->
+            <div class="row">
+                <div class="field">
+                    <label>Cédula</label>
+                    <input type="text" asp-for="Cedula" required onkeyup="ConsultarCliente();">
+                    </div>
+
+                    <div class="field">
+                        <label>Nombre Cliente</label>
+                        <input type="text" asp-for="NombreCliente" readonly required>
+                        </div>
+
+                        <div class="field">
+                            <label>Fecha</label>
+                            <input type="date"
+                                   asp-for="FechaCita"
+                                   id="FechaCita"
+                                   required
+                                   min="@DateTime.Now.ToString("yyyy-MM-dd")"
+                                   onchange="cargarHorasOcupadas()">
+                            </div>
+                        </div>
+
+                       
+                        <div class="row">
+                            <div class="field">
+                                <label>Hora</label>
+
+                                <div class="hora-grid">
+                                    <button type="button" class="btn-hora" data-hora="08:00" onclick="seleccionarHora('08:00', this)">08:00a.m</button>
+                                    <button type="button" class="btn-hora" data-hora="09:00" onclick="seleccionarHora('09:00', this)">09:00a.m</button>
+                                    <button type="button" class="btn-hora" data-hora="10:00" onclick="seleccionarHora('10:00', this)">10:00a.m</button>
+                                    <button type="button" class="btn-hora" data-hora="11:00" onclick="seleccionarHora('11:00', this)">11:00a.m</button>
+                                    <button type="button" class="btn-hora" data-hora="12:00" onclick="seleccionarHora('12:00', this)">12:00p.m</button>
+                                </div>
+
+                                <input type="hidden" asp-for="HoraCita" id="HoraCita">
+                                </div>
+
+                                <div class="field">
+                                    <label>Teléfono</label>
+                                    <input type="text" id="Telefono" asp-for="Telefono" class="form-control" maxlength="8" required>
+                                    </div>
+
+                                    <div class="field">
+                                        <label>Email</label>
+                                        <input type="email" asp-for="Email" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- FILA 3 -->
+                                    <div class="row">
+                                        <div class="field">
+                                            <label>Servicio</label>
+                                            <input type="text" asp-for="Servicio" required>
+                                            </div>
+
+                                        <div class="field">
+                                            <label>Estado</label>
+                                            <input type="text" class="form-control" value="Pendiente" readonly />
+                                        </div>
+                                    
+
+                                            <div class="field">
+                                                <label>Creado por</label>
+                                                <input type="text" class="form-control"
+                                                       value="@Context.Session.GetString("NombreUsuario")" readonly />
+                                            </div>
+                                        </div>
+
+                                        <!-- BOTÓN -->
+                                        <button type="submit" class="btn">Guardar</button>
+
+                                    </form>
+                                </div>
+                                <!-- TABLA -->
+                                <div class="table-citas">
+
+                                    <div class="table-title">Citas Registradas</div>
+
+                                    <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Cliente</th>
+                                            <th>Correo</th>
+                                            <th>Cédula</th>
+                                            <th>Fecha</th>
+                                            <th>Hora</th>
+                                            <th>Teléfono</th>
+                                            <th>Servicio</th>
+                                            <th>Estado</th>
+                                            <th>Creado Por</th>
+                                            <th>Modificado Por</th>
+                                            <th>Fecha Modificación</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+
+                                        <tbody>
+                                            @if (ViewBag.Cita != null)
+                                            {
+                                                foreach (var item in ViewBag.Cita)
+                                                {
+                                                    <tr>
+                                                    <td class="text-center">@item.NombreCliente</td>
+                                                    <td class="text-center"> @item.Email</td>
+                                                    <td class ="text-center">@item.Cedula</td>
+                                                    <td class="text-center">@item.FechaCita.ToString("dd//MM//yyyy")</td>
+                                                    <td class ="text-center">@item.HoraCita</td>
+                                                    <td class ="text-center">@item.Telefono</td>
+                                                    <td class ="text-center">@item.Servicio</td>
+                                                    <td class ="text-center">@item.Estado</td>
+                                                    <td class ="text-center">@item.CreadaPor</td>
+                                                    <td class="text-center">@item.ModificadoPor</td>
+                                                    <td class="text-center">@item.FechaModificacion?.ToString("dd/MM/yyyy hh:mm tt")</td>
+         
+                                                        <td>
+                                                               
+                                                            <div style="display:flex; flex-direction: column; gap:5px;">
+                                                                <a asp-action="EditarCita"
+                                                                       asp-route-id="@item.Consecutivo"
+                                                                       class="btn btn-warning">
+                                                                    Editar
+                                                                </a>
+
+                                                                <a href="javascript:void(0);"
+                                                             onclick="confirmarCancelacion(@item.Consecutivo)"
+                                                                 class="btn btn-cancelar">
+                                                               Cancelar
+                                                               </a>
+                                                            </div>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <tr>
+                                                    <td colspan="10" class="text-center text-muted">
+                                                        No hay citas registradas
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            
+                            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                            <script src="~/js/cita.js" asp-append-version="true"></script>           
+    

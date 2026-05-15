@@ -1,0 +1,122 @@
+﻿/* RESET GENERAL */
+body {
+    margin: 0;
+    padding: 0;
+    background: #1c1c1c;
+    font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR GENERAL (AHORA MÁS ARRIBA) */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 🔥 antes center */
+    min-height: 100vh;
+    padding-top: 10px; /* 🔥 ajusta altura (40–80px ideal) */
+}
+
+/* CONTENEDOR PRINCIPAL */
+.login-container {
+    display: flex;
+    width: 900px;
+    max-width: 95%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px #2a2a2a;
+}
+
+/* LADO IZQUIERDO (IMAGEN) */
+.login-left {
+    width: 50%;
+    background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+}
+
+    /* IMAGEN */
+    .login-left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+/* LADO DERECHO (FORMULARIO) */
+.login-right {
+    width: 50%;
+    padding: 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background: linear-gradient(135deg, #2a2a2a, #3a3a3a);*/
+}
+
+    /* TITULOS */
+    .login-right h2 {
+        margin-bottom: 10px;
+        font-size: 32px; /* puedes subirlo para que resalte más */
+        color: #ffffff; /* 🔥 blanco */
+        font-weight: bold; /* 🔥 más marcado */
+    }
+
+    .login-right p {
+        margin-bottom: 25px;
+        color: #fff;
+    }
+
+    /* INPUTS */
+    .login-right input {
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background: #3a3a3a;
+        color: white;
+    }
+
+    /* BOTÓN */
+    .login-right button {
+        width: 100%;
+        padding: 14px;
+        border: none;
+        border-radius: 10px;
+        background: #5fa8d3;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+        .login-right button:hover {
+            background: #4c94bd;
+        }
+
+/* LINK OLVIDÓ CONTRASEÑA */
+.forgot {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+    .forgot a {
+        color: #ccc;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+        .forgot a:hover {
+            text-decoration: underline;
+        }
+
+footer.footer-alt {
+    background-color: #1c1c1c !important;
+    color: #ffffff !important;
+    width: 100%;
+    text-align: center;
+}
+
+    footer.footer-alt p {
+        margin: 0;
+        color: #ffffff !important;
+        font-size: 14px;
+    }

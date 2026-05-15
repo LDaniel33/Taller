@@ -1,0 +1,118 @@
+﻿@model proyectKN.Models.Cita
+
+@{
+    ViewData["Title"] = "Editar Cita";
+    Layout = "_Layout";
+}
+
+<div class="container mt-4"></div>
+
+
+@if (ViewBag.Mensaje != null)
+{
+    <div class="alert alert-danger text-center text-danger">
+        @ViewBag.Mensaje
+    </div>
+}
+<div class="profile-header">
+    <h2>Editar Cita</h2>
+    <p>Modificar información de la cita</p>
+</div>
+
+<div class="card">
+    <form asp-action="EditarCita" method="post" class="card-body">
+
+        <input type="hidden" asp-for="Consecutivo" id="Consecutivo" />
+
+        <div class="row">
+
+            <div class="field">
+                <label>Cédula</label>
+                <input type="text" asp-for="Cedula" readonly class="form-control" required />
+            </div>
+            <div class="field">
+                <label>Nombre Cliente</label>
+                <input type="text" asp-for="NombreCliente" readonly class="form-control" required />
+                </div>
+
+                   <div class="field">
+    <label>Fecha</label>
+    <input type="date"
+           asp-for="FechaCita"
+           id="FechaCita"
+           required
+           min="@DateTime.Now.ToString("yyyy-MM-dd")"
+           onchange="cargarHorasOcupadasEditar()"
+           onkeydown="return false"
+           onclick="this.showPicker()">
+</div>
+
+                    </div>
+
+                    <div class="row">
+
+                <div class="field">
+    <label>Hora</label>
+
+    <div class="hora-grid">
+        <button type="button" class="btn-hora" data-hora="08:00" onclick="seleccionarHora('08:00', this)">08:00a.m</button>
+        <button type="button" class="btn-hora" data-hora="09:00" onclick="seleccionarHora('09:00', this)">09:00a.m</button>
+        <button type="button" class="btn-hora" data-hora="10:00" onclick="seleccionarHora('10:00', this)">10:00a.m</button>
+        <button type="button" class="btn-hora" data-hora="11:00" onclick="seleccionarHora('11:00', this)">11:00a.m</button>
+        <button type="button" class="btn-hora" data-hora="12:00" onclick="seleccionarHora('12:00', this)">12:00p.m</button>
+    </div>
+
+    <input type="hidden" asp-for="HoraCita" id="HoraCita" />
+</div>
+
+                            <div class="field">
+                                <label>Teléfono</label>
+                    <input type="text" id="Telefono" asp-for="Telefono" class="form-control" maxlength="8" required>
+                                </div>
+
+                                <div class="field">
+                                    <label>Email</label>
+                        <input type="email" asp-for="Email" class="form-control" required />
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="field">
+                                        <label>Servicio</label>
+                        <input type="text" asp-for="Servicio" class="form-control" required />
+                                        </div>
+
+                                        <div class="field">
+                                            <label>Estado Cita</label>
+                                            <select asp-for="Estado">
+
+                                                <option value="">Seleccione Estado</option>
+
+                                                @foreach (var e in ViewBag.EstadoCita)
+                                                {
+                                                    <option value="@e.Consecutivo">@e.Estado</option>
+                                                }
+
+                                            </select>
+                                        </div>
+
+                                        <div class="field">
+                                            <label>Creado Por</label>
+
+                                           
+                    <input type="text" class="form-control"
+                           value="@ViewBag.UsuarioNombre"
+                           readonly />
+
+                    <input type="hidden" asp-for="CreadaPor" />
+                </div>
+
+                                    </div>
+
+                                    <button type="submit" class="btn btn-warning">Actualizar</button>
+                                     <a asp-action="RegistroCita" class="btn btn-secondary">Cancelar</a>
+                                </form>
+                                 </div>
+                               <script src="~/js/editarcita.js"></script>
